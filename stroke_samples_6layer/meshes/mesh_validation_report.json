@@ -1,0 +1,105 @@
+{
+  "n_meshes_loaded": 5,
+  "n_meshes_total": 5,
+  "validation_results": [
+    {
+      "name": "sample_0000",
+      "n_vertices": 28195,
+      "n_triangles": 55608,
+      "n_boundary_edges": 83805,
+      "area_min": 8.0,
+      "area_max": 8.0,
+      "area_mean": 8.0,
+      "n_degenerate": 0,
+      "materials": {
+        "1": 9650,
+        "2": 5908,
+        "3": 6344,
+        "4": 17612,
+        "5": 15768,
+        "6": 104,
+        "7": 222
+      },
+      "valid": true
+    },
+    {
+      "name": "sample_0001",
+      "n_vertices": 28195,
+      "n_triangles": 55608,
+      "n_boundary_edges": 83805,
+      "area_min": 8.0,
+      "area_max": 8.0,
+      "area_mean": 8.0,
+      "n_degenerate": 0,
+      "materials": {
+        "1": 9650,
+        "2": 5908,
+        "3": 4712,
+        "4": 15646,
+        "5": 12244,
+        "7": 7448
+      },
+      "valid": true
+    },
+    {
+      "name": "sample_0002",
+      "n_vertices": 28195,
+      "n_triangles": 55608,
+      "n_boundary_edges": 83805,
+      "area_min": 8.0,
+      "area_max": 8.0,
+      "area_mean": 8.0,
+      "n_degenerate": 0,
+      "materials": {
+        "1": 9650,
+        "2": 5908,
+        "3": 5700,
+        "4": 15140,
+        "5": 12720,
+        "6": 88,
+        "7": 6402
+      },
+      "valid": true
+    },
+    {
+      "name": "sample_0003",
+      "n_vertices": 28195,
+      "n_triangles": 55608,
+      "n_boundary_edges": 83805,
+      "area_min": 8.0,
+      "area_max": 8.0,
+      "area_mean": 8.0,
+      "n_degenerate": 0,
+      "materials": {
+        "1": 9650,
+        "2": 5908,
+        "3": 6242,
+        "4": 17574,
+        "5": 15306,
+        "6": 104,
+        "7": 824
+      },
+      "valid": true
+    },
+    {
+      "name": "sample_0004",
+      "n_vertices": 28195,
+      "n_triangles": 55608,
+      "n_boundary_edges": 83805,
+      "area_min": 8.0,
+      "area_max": 8.0,
+      "area_mean": 8.0,
+      "n_degenerate": 0,
+      "materials": {
+        "1": 9650,
+        "2": 5908,
+        "3": 6000,
+        "4": 15592,
+        "5": 12482,
+        "6": 104,
+        "7": 5872
+      },
+      "valid": true
+    }
+  ]
+}
