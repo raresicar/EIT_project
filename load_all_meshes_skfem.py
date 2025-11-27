@@ -1,12 +1,13 @@
 """
-Load and Verify All Stroke Sample Meshes in scikit-fem
+Load and Verify All BrainWeb Subject Meshes in scikit-fem
+Loads meshes for all subjects and all layer types (3, 6, 9)
 """
 
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
 import json
-from tqdm import tqdm
+import sys
 
 print("Importing scikit-fem...")
 try:
@@ -15,7 +16,16 @@ try:
 except ImportError as e:
     print(f"✗ Error importing scikit-fem: {e}")
     print("Install with: pip install scikit-fem[all]")
-    exit(1)
+    sys.exit(1)
+
+try:
+    from tqdm import tqdm
+except ImportError:
+    print("⚠ tqdm not available, using simple progress")
+    # Simple fallback if tqdm not installed
+    def tqdm(iterable, desc="Processing"):
+        print(f"{desc}...")
+        return iterable
 
 
 # =============================================================================
@@ -32,14 +42,12 @@ def load_mesh_to_skfem(npz_path):
     Returns:
         mesh: scikit-fem MeshTri object
         materials: Material array
-        metadata: Metadata dictionary
     """
     data = np.load(npz_path, allow_pickle=True)
     
     points = data['points']
     cells = data['cells']
     materials = data['materials']
-    metadata = data['metadata'].item() if 'metadata' in data else {}
     
     # Extract 2D coordinates if needed
     if points.shape[1] == 3:
@@ -54,7 +62,7 @@ def load_mesh_to_skfem(npz_path):
         cells.T       # (M, 3) -> (3, M)
     )
     
-    return mesh, materials, metadata
+    return mesh, materials
 
 
 # =============================================================================
@@ -96,189 +104,223 @@ def validate_mesh(mesh, materials, mesh_name="mesh"):
         'area_mean': float(areas.mean()),
         'n_degenerate': int(n_degenerate),
         'materials': material_counts,
-        'valid': bool(n_degenerate == 0)  # Convert numpy.bool_ to Python bool
+        'valid': bool(n_degenerate == 0)
     }
     
     return results
 
 
 # =============================================================================
+# LOAD SINGLE SUBJECT
+# =============================================================================
+
+def load_subject_meshes(subject_dir):
+    """
+    Load all mesh types for a single subject
+    
+    Args:
+        subject_dir: Path to subject directory
+    
+    Returns:
+        dict with loaded meshes for each layer type
+    """
+    subject_name = subject_dir.name
+    results = {}
+    
+    for layer_type in ['3layer', '6layer', '9layer']:
+        mesh_dir = subject_dir / f"meshes_{layer_type}"
+        mesh_file = mesh_dir / "head_mesh.npz"
+        
+        if not mesh_file.exists():
+            results[layer_type] = {
+                'success': False,
+                'error': f"Mesh file not found: {mesh_file}"
+            }
+            continue
+        
+        try:
+            # Load mesh
+            mesh, materials = load_mesh_to_skfem(mesh_file)
+            
+            # Validate
+            validation = validate_mesh(mesh, materials, f"{subject_name}_{layer_type}")
+            
+            results[layer_type] = {
+                'success': True,
+                'mesh': mesh,
+                'materials': materials,
+                'validation': validation,
+                'mesh_file': str(mesh_file)
+            }
+            
+        except Exception as e:
+            results[layer_type] = {
+                'success': False,
+                'error': str(e)
+            }
+    
+    return {
+        'subject_name': subject_name,
+        'meshes': results
+    }
+
+
+# =============================================================================
 # BATCH LOADING
 # =============================================================================
 
-def load_all_meshes(mesh_dir, max_meshes=None):
+def load_all_subject_meshes(subjects_base_dir='brainweb_subjects', max_subjects=None):
     """
-    Load all meshes from a directory
+    Load all meshes from all subjects
     
     Args:
-        mesh_dir: Directory containing mesh NPZ files
-        max_meshes: Maximum number to load (None = all)
+        subjects_base_dir: Base directory containing subject folders
+        max_subjects: Maximum number of subjects to load (None = all)
     
     Returns:
-        list of dicts with mesh info
+        list of dicts with subject mesh info
     """
     print("="*70)
-    print("Loading Stroke Sample Meshes into scikit-fem")
+    print("Loading All BrainWeb Subject Meshes into scikit-fem")
     print("="*70)
     
-    mesh_dir = Path(mesh_dir)
+    subjects_base_dir = Path(subjects_base_dir)
     
-    if not mesh_dir.exists():
-        raise ValueError(f"Mesh directory not found: {mesh_dir}")
+    if not subjects_base_dir.exists():
+        raise ValueError(f"Subjects directory not found: {subjects_base_dir}")
     
-    # Find all mesh NPZ files
-    mesh_files = sorted(mesh_dir.glob("sample_*.npz"))
+    # Find all subject directories
+    subject_dirs = sorted([d for d in subjects_base_dir.iterdir() 
+                          if d.is_dir() and d.name.startswith('subject_')])
     
-    if len(mesh_files) == 0:
-        print(f"\n✗ No mesh files found in {mesh_dir}")
+    if len(subject_dirs) == 0:
+        print(f"\n✗ No subject directories found in {subjects_base_dir}")
         return []
     
-    if max_meshes is not None:
-        mesh_files = mesh_files[:max_meshes]
+    if max_subjects is not None:
+        subject_dirs = subject_dirs[:max_subjects]
     
-    print(f"\nFound {len(mesh_files)} mesh files")
-    print(f"Directory: {mesh_dir}\n")
+    print(f"\nFound {len(subject_dirs)} subjects")
+    print(f"Loading meshes for each subject (3 layer types each)...\n")
     
-    # Load all meshes
-    loaded_meshes = []
-    validation_results = []
+    # Load all subjects
+    all_subjects = []
     
-    print("Loading meshes...")
-    for mesh_path in tqdm(mesh_files, desc="Loading"):
+    for subject_dir in tqdm(subject_dirs, desc="Loading subjects"):
         try:
-            # Load mesh
-            mesh, materials, metadata = load_mesh_to_skfem(mesh_path)
-            
-            # Validate
-            validation = validate_mesh(mesh, materials, mesh_path.stem)
-            
-            loaded_meshes.append({
-                'path': mesh_path,
-                'mesh': mesh,
-                'materials': materials,
-                'metadata': metadata,
-                'validation': validation
-            })
-            
-            validation_results.append(validation)
-            
+            subject_data = load_subject_meshes(subject_dir)
+            all_subjects.append(subject_data)
         except Exception as e:
-            print(f"\n✗ Failed to load {mesh_path.name}: {e}")
+            print(f"\n✗ Failed to load {subject_dir.name}: {e}")
             continue
     
-    print(f"\n✓ Successfully loaded {len(loaded_meshes)}/{len(mesh_files)} meshes")
+    print(f"\n✓ Successfully loaded {len(all_subjects)}/{len(subject_dirs)} subjects")
     
-    # Summary statistics
+    # Statistics
     print("\n" + "="*70)
-    print("Mesh Statistics")
+    print("Loading Statistics")
     print("="*70)
     
-    if len(validation_results) > 0:
-        n_vertices = [r['n_vertices'] for r in validation_results]
-        n_triangles = [r['n_triangles'] for r in validation_results]
-        n_degenerate = [r['n_degenerate'] for r in validation_results]
-        
-        print(f"\nVertices per mesh:")
-        print(f"  Min:    {min(n_vertices):,}")
-        print(f"  Max:    {max(n_vertices):,}")
-        print(f"  Mean:   {np.mean(n_vertices):,.0f}")
-        print(f"  Median: {np.median(n_vertices):,.0f}")
-        
-        print(f"\nTriangles per mesh:")
-        print(f"  Min:    {min(n_triangles):,}")
-        print(f"  Max:    {max(n_triangles):,}")
-        print(f"  Mean:   {np.mean(n_triangles):,.0f}")
-        print(f"  Median: {np.median(n_triangles):,.0f}")
-        
-        print(f"\nMesh quality:")
-        n_valid = sum(r['valid'] for r in validation_results)
-        print(f"  Valid meshes: {n_valid}/{len(validation_results)}")
-        print(f"  Degenerate triangles: {sum(n_degenerate)} total")
-        
-        if sum(n_degenerate) > 0:
-            print(f"  ⚠️ WARNING: Some meshes have degenerate triangles")
-        
-        # Material distribution across all meshes
-        all_materials = set()
-        for r in validation_results:
-            all_materials.update(r['materials'].keys())
-        
-        print(f"\nMaterials found across all meshes: {sorted(all_materials)}")
-        
-        # Stroke type distribution
-        stroke_types = {}
-        stroke_sizes = {}
-        
-        for item in loaded_meshes:
-            metadata = item['metadata']
-            if 'stroke_info' in metadata:
-                info = metadata['stroke_info']
-                stype = info['type']
-                ssize = info['size_category']
-                
-                stroke_types[stype] = stroke_types.get(stype, 0) + 1
-                stroke_sizes[ssize] = stroke_sizes.get(ssize, 0) + 1
-        
-        if stroke_types:
-            print(f"\nStroke types:")
-            for stype, count in sorted(stroke_types.items()):
-                print(f"  {stype}: {count} ({100*count/len(loaded_meshes):.1f}%)")
-        
-        if stroke_sizes:
-            print(f"\nStroke sizes:")
-            for ssize, count in sorted(stroke_sizes.items()):
-                print(f"  {ssize}: {count} ({100*count/len(loaded_meshes):.1f}%)")
+    total_meshes_loaded = 0
+    total_meshes_expected = len(all_subjects) * 3
     
-    # Save validation report
-    report_path = mesh_dir / "mesh_validation_report.json"
+    for layer_type in ['3layer', '6layer', '9layer']:
+        successful = sum(1 for s in all_subjects 
+                        if s['meshes'][layer_type]['success'])
+        total_meshes_loaded += successful
+        print(f"\n{layer_type.upper()}:")
+        print(f"  Successfully loaded: {successful}/{len(all_subjects)}")
+        
+        if successful > 0:
+            # Get statistics for successfully loaded meshes
+            validations = [s['meshes'][layer_type]['validation'] 
+                          for s in all_subjects 
+                          if s['meshes'][layer_type]['success']]
+            
+            n_vertices = [v['n_vertices'] for v in validations]
+            n_triangles = [v['n_triangles'] for v in validations]
+            n_degenerate = [v['n_degenerate'] for v in validations]
+            
+            print(f"  Vertices:  min={min(n_vertices):,}, max={max(n_vertices):,}, mean={np.mean(n_vertices):,.0f}")
+            print(f"  Triangles: min={min(n_triangles):,}, max={max(n_triangles):,}, mean={np.mean(n_triangles):,.0f}")
+            
+            n_valid = sum(1 for v in validations if v['valid'])
+            print(f"  Valid meshes: {n_valid}/{successful}")
+            
+            if sum(n_degenerate) > 0:
+                print(f"  ⚠️ Degenerate triangles: {sum(n_degenerate)} total")
+    
+    print(f"\nTotal meshes loaded: {total_meshes_loaded}/{total_meshes_expected}")
+    
+    # Save loading report
+    report = {
+        'n_subjects': len(all_subjects),
+        'n_meshes_loaded': total_meshes_loaded,
+        'n_meshes_expected': total_meshes_expected,
+        'subjects': []
+    }
+    
+    for subject in all_subjects:
+        subject_report = {
+            'subject_name': subject['subject_name'],
+            'layers': {}
+        }
+        
+        for layer_type in ['3layer', '6layer', '9layer']:
+            mesh_data = subject['meshes'][layer_type]
+            if mesh_data['success']:
+                subject_report['layers'][layer_type] = mesh_data['validation']
+            else:
+                subject_report['layers'][layer_type] = {
+                    'error': mesh_data['error']
+                }
+        
+        report['subjects'].append(subject_report)
+    
+    report_path = subjects_base_dir / "mesh_loading_report.json"
     with open(report_path, 'w') as f:
-        json.dump({
-            'n_meshes_loaded': len(loaded_meshes),
-            'n_meshes_total': len(mesh_files),
-            'validation_results': validation_results
-        }, f, indent=2)
+        json.dump(report, f, indent=2)
     
-    print(f"\n✓ Saved validation report: {report_path}")
+    print(f"\n✓ Saved loading report: {report_path}")
     
-    return loaded_meshes
+    return all_subjects
 
 
 # =============================================================================
 # VISUALIZATION
 # =============================================================================
 
-def visualize_sample_meshes(loaded_meshes, output_dir, n_display=9):
+def visualize_subject_meshes(subject_data, output_dir):
     """
-    Visualize random sample meshes
+    Create visualization comparing all layer types for one subject
     
     Args:
-        loaded_meshes: List of loaded mesh dicts
+        subject_data: Dict with subject mesh data
         output_dir: Directory to save visualization
-        n_display: Number of meshes to display
     """
-    if len(loaded_meshes) == 0:
+    subject_name = subject_data['subject_name']
+    
+    # Check which meshes are available
+    available_layers = [layer for layer in ['3layer', '6layer', '9layer']
+                       if subject_data['meshes'][layer]['success']]
+    
+    if len(available_layers) == 0:
+        print(f"  No meshes available for {subject_name}")
         return
     
-    print(f"\nCreating visualization of {n_display} random meshes...")
+    n_plots = len(available_layers)
+    fig, axes = plt.subplots(1, n_plots, figsize=(6*n_plots, 6))
     
-    # Select random samples
-    indices = np.random.choice(len(loaded_meshes), 
-                              min(n_display, len(loaded_meshes)), 
-                              replace=False)
-    
-    n_cols = 3
-    n_rows = (len(indices) + n_cols - 1) // n_cols
-    
-    fig, axes = plt.subplots(n_rows, n_cols, figsize=(15, 5*n_rows))
-    axes = axes.flatten() if n_display > 1 else [axes]
+    if n_plots == 1:
+        axes = [axes]
     
     from matplotlib.tri import Triangulation
     
-    for idx, sample_idx in enumerate(indices):
-        item = loaded_meshes[sample_idx]
-        mesh = item['mesh']
-        materials = item['materials']
-        metadata = item['metadata']
+    for idx, layer_type in enumerate(available_layers):
+        mesh_data = subject_data['meshes'][layer_type]
+        mesh = mesh_data['mesh']
+        materials = mesh_data['materials']
+        validation = mesh_data['validation']
         
         ax = axes[idx]
         
@@ -290,16 +332,70 @@ def visualize_sample_meshes(loaded_meshes, output_dir, n_display=9):
                     edgecolors='k', linewidth=0.1, alpha=0.8)
         
         # Title
-        if 'stroke_info' in metadata:
-            info = metadata['stroke_info']
-            title = f"{item['path'].stem}\n{info['type']} - {info['size_category']}"
-        else:
-            title = item['path'].stem
+        title = f"{layer_type.upper()}\n{validation['n_vertices']:,} nodes, {validation['n_triangles']:,} tris"
+        ax.set_title(title, fontsize=11, fontweight='bold')
+        ax.set_aspect('equal')
+        ax.axis('off')
+    
+    fig.suptitle(f"{subject_name} - All Layer Types", fontsize=14, fontweight='bold')
+    plt.tight_layout()
+    
+    viz_path = Path(output_dir) / f"{subject_name}_meshes_comparison.png"
+    plt.savefig(viz_path, dpi=200, bbox_inches='tight')
+    plt.close()
+    print(f"✓ Saved: {viz_path}")
+
+
+def create_overview_visualization(all_subjects, output_dir, n_display=6):
+    """
+    Create overview visualization showing random subjects
+    
+    Args:
+        all_subjects: List of all subject data
+        output_dir: Directory to save visualization
+        n_display: Number of subjects to display
+    """
+    if len(all_subjects) == 0:
+        return
+    
+    print(f"\nCreating overview visualization of {n_display} random subjects...")
+    
+    # Select random subjects
+    indices = np.random.choice(len(all_subjects), 
+                              min(n_display, len(all_subjects)), 
+                              replace=False)
+    
+    # Create figure (2 rows x 3 cols for 6 subjects)
+    n_rows = 2
+    n_cols = 3
+    fig, axes = plt.subplots(n_rows, n_cols, figsize=(15, 10))
+    axes = axes.flatten()
+    
+    from matplotlib.tri import Triangulation
+    
+    for plot_idx, subject_idx in enumerate(indices):
+        subject = all_subjects[subject_idx]
+        ax = axes[plot_idx]
         
-        validation = item['validation']
-        title += f"\n{validation['n_vertices']} nodes, {validation['n_triangles']} tris"
+        # Use 6-layer mesh for overview
+        layer_type = '6layer'
         
-        ax.set_title(title, fontsize=9)
+        if not subject['meshes'][layer_type]['success']:
+            ax.text(0.5, 0.5, f"{subject['subject_name']}\nMesh not available",
+                   ha='center', va='center')
+            ax.axis('off')
+            continue
+        
+        mesh_data = subject['meshes'][layer_type]
+        mesh = mesh_data['mesh']
+        materials = mesh_data['materials']
+        
+        # Plot
+        tri = Triangulation(mesh.p[0], mesh.p[1], mesh.t.T)
+        ax.tripcolor(tri, materials, cmap='tab10', shading='flat',
+                    edgecolors='k', linewidth=0.1, alpha=0.8)
+        
+        ax.set_title(f"{subject['subject_name']}", fontsize=10, fontweight='bold')
         ax.set_aspect('equal')
         ax.axis('off')
     
@@ -307,99 +403,13 @@ def visualize_sample_meshes(loaded_meshes, output_dir, n_display=9):
     for idx in range(len(indices), len(axes)):
         axes[idx].axis('off')
     
+    fig.suptitle('BrainWeb Subject Meshes - Random Sample (6-layer)', 
+                fontsize=14, fontweight='bold')
     plt.tight_layout()
     
-    viz_path = Path(output_dir) / "skfem_loaded_meshes.png"
+    viz_path = Path(output_dir) / "subjects_overview.png"
     plt.savefig(viz_path, dpi=200, bbox_inches='tight')
-    print(f"✓ Saved visualization: {viz_path}")
-    plt.close()
-
-
-def visualize_detailed_mesh(loaded_mesh, output_path):
-    """
-    Create detailed visualization of a single mesh
-    
-    Args:
-        loaded_mesh: Dict with mesh info
-        output_path: Path to save figure
-    """
-    mesh = loaded_mesh['mesh']
-    materials = loaded_mesh['materials']
-    metadata = loaded_mesh['metadata']
-    validation = loaded_mesh['validation']
-    
-    fig, axes = plt.subplots(2, 2, figsize=(14, 14))
-    
-    from matplotlib.tri import Triangulation
-    tri = Triangulation(mesh.p[0], mesh.p[1], mesh.t.T)
-    
-    # Plot 1: Wireframe
-    ax = axes[0, 0]
-    ax.triplot(tri, 'k-', linewidth=0.2, alpha=0.5)
-    ax.set_title('Full Mesh - Wireframe', fontweight='bold', fontsize=14)
-    ax.set_xlabel('x (mm)')
-    ax.set_ylabel('y (mm)')
-    ax.set_aspect('equal')
-    ax.grid(True, alpha=0.3)
-    
-    # Plot 2: Zoomed view
-    ax = axes[0, 1]
-    ax.triplot(tri, 'k-', linewidth=0.5)
-    cx, cy = mesh.p[0].mean(), mesh.p[1].mean()
-    zoom = 50
-    ax.set_xlim(cx - zoom, cx + zoom)
-    ax.set_ylim(cy - zoom, cy + zoom)
-    ax.set_title('Zoomed View', fontweight='bold', fontsize=14)
-    ax.set_xlabel('x (mm)')
-    ax.set_ylabel('y (mm)')
-    ax.set_aspect('equal')
-    ax.grid(True, alpha=0.3)
-    
-    # Plot 3: Filled mesh
-    ax = axes[1, 0]
-    ax.tripcolor(tri, np.ones(mesh.t.shape[1]), cmap='Blues',
-                edgecolors='k', linewidth=0.05, alpha=0.7)
-    ax.set_title('Filled Mesh', fontweight='bold', fontsize=14)
-    ax.set_xlabel('x (mm)')
-    ax.set_ylabel('y (mm)')
-    ax.set_aspect('equal')
-    
-    # Plot 4: Material regions
-    ax = axes[1, 1]
-    im = ax.tripcolor(tri, materials, cmap='tab10', shading='flat',
-                     edgecolors='k', linewidth=0.1, alpha=0.8)
-    
-    # Highlight stroke if present
-    if 'stroke_info' in metadata:
-        info = metadata['stroke_info']
-        cy, cx = info['center_y'], info['center_x']
-        ax.plot(cy, cx, 'w+', markersize=20, markeredgewidth=3)
-        title = f"Material Regions\n{info['type']} stroke ({info['size_category']})"
-    else:
-        title = "Material Regions"
-    
-    ax.set_title(title, fontweight='bold', fontsize=14)
-    ax.set_xlabel('x (mm)')
-    ax.set_ylabel('y (mm)')
-    ax.set_aspect('equal')
-    
-    cbar = plt.colorbar(im, ax=ax)
-    cbar.set_label('Material ID', fontweight='bold')
-    
-    # Add info text
-    info_text = (
-        f"Mesh: {loaded_mesh['path'].name}\n"
-        f"Vertices: {validation['n_vertices']:,}\n"
-        f"Triangles: {validation['n_triangles']:,}\n"
-        f"Materials: {list(validation['materials'].keys())}\n"
-        f"Valid: {validation['valid']}"
-    )
-    fig.text(0.5, 0.02, info_text, ha='center', fontsize=10,
-            bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
-    
-    plt.tight_layout(rect=[0, 0.05, 1, 1])
-    plt.savefig(output_path, dpi=300, bbox_inches='tight')
-    print(f"✓ Saved detailed view: {output_path}")
+    print(f"✓ Saved overview: {viz_path}")
     plt.close()
 
 
@@ -409,23 +419,22 @@ def visualize_detailed_mesh(loaded_mesh, output_path):
 
 def main():
     """Main entry point"""
-    import sys
     import argparse
     
     parser = argparse.ArgumentParser(
-        description="Load and verify stroke sample meshes in scikit-fem"
+        description="Load and verify all BrainWeb subject meshes in scikit-fem"
     )
     parser.add_argument(
-        'mesh_dir',
+        '--subjects-dir',
         type=str,
-        nargs='?',
-        help='Directory containing mesh files (e.g., stroke_samples_6layer/meshes)'
+        default='brainweb_subjects',
+        help='Base directory containing subject folders (default: brainweb_subjects)'
     )
     parser.add_argument(
-        '--max-meshes',
+        '--max-subjects',
         type=int,
         default=None,
-        help='Maximum number of meshes to load (default: all)'
+        help='Maximum number of subjects to load (default: all)'
     )
     parser.add_argument(
         '--visualize',
@@ -433,68 +442,54 @@ def main():
         help='Create visualizations'
     )
     parser.add_argument(
-        '--detailed',
-        type=int,
+        '--visualize-subject',
+        type=str,
         default=None,
-        help='Create detailed visualization for mesh N'
+        help='Create detailed visualization for specific subject (e.g., subject_00)'
     )
     
     args = parser.parse_args()
     
-    # Find mesh directories if not specified
-    if args.mesh_dir is None:
-        mesh_dirs = []
-        for sample_dir in Path('.').iterdir():
-            if sample_dir.is_dir() and sample_dir.name.startswith('stroke_samples_'):
-                mesh_subdir = sample_dir / 'meshes'
-                if mesh_subdir.exists():
-                    mesh_dirs.append(mesh_subdir)
-        
-        if len(mesh_dirs) == 0:
-            print("✗ No mesh directories found")
-            print("  Looking for: stroke_samples_*/meshes/")
-            sys.exit(1)
-        
-        print(f"Found {len(mesh_dirs)} mesh directories:")
-        for i, d in enumerate(mesh_dirs, 1):
-            n_meshes = len(list(d.glob("sample_*.npz")))
-            print(f"  {i}. {d} ({n_meshes} meshes)")
-        
-        choice = input(f"\nSelect directory (1-{len(mesh_dirs)}): ").strip()
-        try:
-            idx = int(choice) - 1
-            mesh_dir = mesh_dirs[idx]
-        except (ValueError, IndexError):
-            print("Invalid choice")
-            sys.exit(1)
-    else:
-        mesh_dir = Path(args.mesh_dir)
+    subjects_dir = Path(args.subjects_dir)
     
-    # Load all meshes
-    loaded_meshes = load_all_meshes(mesh_dir, max_meshes=args.max_meshes)
+    if not subjects_dir.exists():
+        print(f"✗ Subjects directory not found: {subjects_dir}")
+        sys.exit(1)
     
-    if len(loaded_meshes) == 0:
-        print("\n✗ No meshes loaded successfully")
+    # Load all subjects
+    all_subjects = load_all_subject_meshes(
+        subjects_base_dir=args.subjects_dir,
+        max_subjects=args.max_subjects
+    )
+    
+    if len(all_subjects) == 0:
+        print("\n✗ No subjects loaded successfully")
         return
     
     # Visualizations
     if args.visualize:
-        visualize_sample_meshes(loaded_meshes, mesh_dir)
+        create_overview_visualization(all_subjects, subjects_dir)
     
-    if args.detailed is not None:
-        if 0 <= args.detailed < len(loaded_meshes):
-            output_path = mesh_dir / f"detailed_mesh_{args.detailed:04d}.png"
-            visualize_detailed_mesh(loaded_meshes[args.detailed], output_path)
+    if args.visualize_subject:
+        # Find the requested subject
+        subject_data = None
+        for s in all_subjects:
+            if s['subject_name'] == args.visualize_subject:
+                subject_data = s
+                break
+        
+        if subject_data:
+            visualize_subject_meshes(subject_data, subjects_dir)
         else:
-            print(f"✗ Invalid mesh index: {args.detailed}")
+            print(f"✗ Subject not found: {args.visualize_subject}")
     
     print("\n" + "="*70)
     print("✓ COMPLETE!")
     print("="*70)
-    print(f"\nAll {len(loaded_meshes)} meshes successfully loaded into scikit-fem!")
-    print("Ready for EIT forward problem simulation.")
+    print(f"\nSuccessfully loaded meshes for {len(all_subjects)} subjects")
+    print("All meshes are now in scikit-fem format and ready for EIT simulations!")
     
-    return loaded_meshes
+    return all_subjects
 
 
 if __name__ == "__main__":

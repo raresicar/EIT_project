@@ -1,0 +1,947 @@
+{
+  "n_subjects_processed": 20,
+  "n_subjects_total": 20,
+  "output_directory": "brainweb_subjects",
+  "subjects": [
+    {
+      "subject_idx": 0,
+      "subject_name": "subject_00",
+      "slice_shape": [
+        434,
+        362
+      ],
+      "3layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "background_pixels": 51404,
+        "tissue_pixels": 105704
+      },
+      "6layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "background_pixels": 51706,
+        "tissue_pixels": 105402
+      },
+      "9layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "background_pixels": 52347,
+        "tissue_pixels": 104761
+      }
+    },
+    {
+      "subject_idx": 1,
+      "subject_name": "subject_01",
+      "slice_shape": [
+        434,
+        362
+      ],
+      "3layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "background_pixels": 56326,
+        "tissue_pixels": 100782
+      },
+      "6layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "background_pixels": 56580,
+        "tissue_pixels": 100528
+      },
+      "9layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "background_pixels": 57588,
+        "tissue_pixels": 99520
+      }
+    },
+    {
+      "subject_idx": 2,
+      "subject_name": "subject_02",
+      "slice_shape": [
+        434,
+        362
+      ],
+      "3layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "background_pixels": 45701,
+        "tissue_pixels": 111407
+      },
+      "6layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "background_pixels": 46004,
+        "tissue_pixels": 111104
+      },
+      "9layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "background_pixels": 47760,
+        "tissue_pixels": 109348
+      }
+    },
+    {
+      "subject_idx": 3,
+      "subject_name": "subject_03",
+      "slice_shape": [
+        434,
+        362
+      ],
+      "3layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "background_pixels": 51325,
+        "tissue_pixels": 105783
+      },
+      "6layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "background_pixels": 51592,
+        "tissue_pixels": 105516
+      },
+      "9layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "background_pixels": 52821,
+        "tissue_pixels": 104287
+      }
+    },
+    {
+      "subject_idx": 4,
+      "subject_name": "subject_04",
+      "slice_shape": [
+        434,
+        362
+      ],
+      "3layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "background_pixels": 59600,
+        "tissue_pixels": 97508
+      },
+      "6layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "background_pixels": 59800,
+        "tissue_pixels": 97308
+      },
+      "9layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "background_pixels": 61356,
+        "tissue_pixels": 95752
+      }
+    },
+    {
+      "subject_idx": 5,
+      "subject_name": "subject_05",
+      "slice_shape": [
+        434,
+        362
+      ],
+      "3layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "background_pixels": 52432,
+        "tissue_pixels": 104676
+      },
+      "6layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "background_pixels": 52913,
+        "tissue_pixels": 104195
+      },
+      "9layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "background_pixels": 53892,
+        "tissue_pixels": 103216
+      }
+    },
+    {
+      "subject_idx": 6,
+      "subject_name": "subject_06",
+      "slice_shape": [
+        434,
+        362
+      ],
+      "3layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "background_pixels": 53778,
+        "tissue_pixels": 103330
+      },
+      "6layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "background_pixels": 54762,
+        "tissue_pixels": 102346
+      },
+      "9layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "background_pixels": 55423,
+        "tissue_pixels": 101685
+      }
+    },
+    {
+      "subject_idx": 7,
+      "subject_name": "subject_07",
+      "slice_shape": [
+        434,
+        362
+      ],
+      "3layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "background_pixels": 55998,
+        "tissue_pixels": 101110
+      },
+      "6layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "background_pixels": 56196,
+        "tissue_pixels": 100912
+      },
+      "9layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "background_pixels": 58164,
+        "tissue_pixels": 98944
+      }
+    },
+    {
+      "subject_idx": 8,
+      "subject_name": "subject_08",
+      "slice_shape": [
+        434,
+        362
+      ],
+      "3layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "background_pixels": 53058,
+        "tissue_pixels": 104050
+      },
+      "6layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "background_pixels": 53254,
+        "tissue_pixels": 103854
+      },
+      "9layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "background_pixels": 53890,
+        "tissue_pixels": 103218
+      }
+    },
+    {
+      "subject_idx": 9,
+      "subject_name": "subject_09",
+      "slice_shape": [
+        434,
+        362
+      ],
+      "3layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "background_pixels": 50861,
+        "tissue_pixels": 106247
+      },
+      "6layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "background_pixels": 51113,
+        "tissue_pixels": 105995
+      },
+      "9layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "background_pixels": 52922,
+        "tissue_pixels": 104186
+      }
+    },
+    {
+      "subject_idx": 10,
+      "subject_name": "subject_10",
+      "slice_shape": [
+        434,
+        362
+      ],
+      "3layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "background_pixels": 52902,
+        "tissue_pixels": 104206
+      },
+      "6layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "background_pixels": 53223,
+        "tissue_pixels": 103885
+      },
+      "9layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "background_pixels": 55237,
+        "tissue_pixels": 101871
+      }
+    },
+    {
+      "subject_idx": 11,
+      "subject_name": "subject_11",
+      "slice_shape": [
+        434,
+        362
+      ],
+      "3layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "background_pixels": 51527,
+        "tissue_pixels": 105581
+      },
+      "6layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "background_pixels": 51831,
+        "tissue_pixels": 105277
+      },
+      "9layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "background_pixels": 53288,
+        "tissue_pixels": 103820
+      }
+    },
+    {
+      "subject_idx": 12,
+      "subject_name": "subject_12",
+      "slice_shape": [
+        434,
+        362
+      ],
+      "3layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "background_pixels": 49635,
+        "tissue_pixels": 107473
+      },
+      "6layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "background_pixels": 49943,
+        "tissue_pixels": 107165
+      },
+      "9layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "background_pixels": 51433,
+        "tissue_pixels": 105675
+      }
+    },
+    {
+      "subject_idx": 13,
+      "subject_name": "subject_13",
+      "slice_shape": [
+        434,
+        362
+      ],
+      "3layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "background_pixels": 46631,
+        "tissue_pixels": 110477
+      },
+      "6layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "background_pixels": 46967,
+        "tissue_pixels": 110141
+      },
+      "9layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "background_pixels": 49158,
+        "tissue_pixels": 107950
+      }
+    },
+    {
+      "subject_idx": 14,
+      "subject_name": "subject_14",
+      "slice_shape": [
+        434,
+        362
+      ],
+      "3layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "background_pixels": 52782,
+        "tissue_pixels": 104326
+      },
+      "6layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "background_pixels": 52857,
+        "tissue_pixels": 104251
+      },
+      "9layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "background_pixels": 54237,
+        "tissue_pixels": 102871
+      }
+    },
+    {
+      "subject_idx": 15,
+      "subject_name": "subject_15",
+      "slice_shape": [
+        434,
+        362
+      ],
+      "3layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "background_pixels": 55927,
+        "tissue_pixels": 101181
+      },
+      "6layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "background_pixels": 56207,
+        "tissue_pixels": 100901
+      },
+      "9layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "background_pixels": 57857,
+        "tissue_pixels": 99251
+      }
+    },
+    {
+      "subject_idx": 16,
+      "subject_name": "subject_16",
+      "slice_shape": [
+        434,
+        362
+      ],
+      "3layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "background_pixels": 57652,
+        "tissue_pixels": 99456
+      },
+      "6layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "background_pixels": 58006,
+        "tissue_pixels": 99102
+      },
+      "9layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "background_pixels": 58997,
+        "tissue_pixels": 98111
+      }
+    },
+    {
+      "subject_idx": 17,
+      "subject_name": "subject_17",
+      "slice_shape": [
+        434,
+        362
+      ],
+      "3layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "background_pixels": 58946,
+        "tissue_pixels": 98162
+      },
+      "6layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "background_pixels": 59017,
+        "tissue_pixels": 98091
+      },
+      "9layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "background_pixels": 60160,
+        "tissue_pixels": 96948
+      }
+    },
+    {
+      "subject_idx": 18,
+      "subject_name": "subject_18",
+      "slice_shape": [
+        434,
+        362
+      ],
+      "3layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "background_pixels": 53724,
+        "tissue_pixels": 103384
+      },
+      "6layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "background_pixels": 54226,
+        "tissue_pixels": 102882
+      },
+      "9layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "background_pixels": 54879,
+        "tissue_pixels": 102229
+      }
+    },
+    {
+      "subject_idx": 19,
+      "subject_name": "subject_19",
+      "slice_shape": [
+        434,
+        362
+      ],
+      "3layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "background_pixels": 48677,
+        "tissue_pixels": 108431
+      },
+      "6layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "background_pixels": 48878,
+        "tissue_pixels": 108230
+      },
+      "9layer": {
+        "unique_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "background_pixels": 50073,
+        "tissue_pixels": 107035
+      }
+    }
+  ]
+}

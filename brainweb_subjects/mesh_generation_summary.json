@@ -1,0 +1,1368 @@
+{
+  "n_subjects_processed": 20,
+  "n_subjects_total": 20,
+  "pixel_size_mm": 2.0,
+  "subsample_factor": 2,
+  "subjects": [
+    {
+      "subject_name": "subject_00",
+      "layer_results": {
+        "3layer": {
+          "layer_type": "3layer",
+          "n_nodes": 26431,
+          "n_triangles": 49644,
+          "materials": [
+            1,
+            2,
+            3
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_00/meshes_3layer/head_mesh.vtk",
+            "brainweb_subjects/subject_00/meshes_3layer/head_mesh.msh",
+            "brainweb_subjects/subject_00/meshes_3layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_00/meshes_3layer/head_mesh.npz"
+          ]
+        },
+        "6layer": {
+          "layer_type": "6layer",
+          "n_nodes": 26358,
+          "n_triangles": 49398,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_00/meshes_6layer/head_mesh.vtk",
+            "brainweb_subjects/subject_00/meshes_6layer/head_mesh.msh",
+            "brainweb_subjects/subject_00/meshes_6layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_00/meshes_6layer/head_mesh.npz"
+          ]
+        },
+        "9layer": {
+          "layer_type": "9layer",
+          "n_nodes": 26198,
+          "n_triangles": 48902,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_00/meshes_9layer/head_mesh.vtk",
+            "brainweb_subjects/subject_00/meshes_9layer/head_mesh.msh",
+            "brainweb_subjects/subject_00/meshes_9layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_00/meshes_9layer/head_mesh.npz"
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_01",
+      "layer_results": {
+        "3layer": {
+          "layer_type": "3layer",
+          "n_nodes": 25190,
+          "n_triangles": 47792,
+          "materials": [
+            1,
+            2,
+            3
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_01/meshes_3layer/head_mesh.vtk",
+            "brainweb_subjects/subject_01/meshes_3layer/head_mesh.msh",
+            "brainweb_subjects/subject_01/meshes_3layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_01/meshes_3layer/head_mesh.npz"
+          ]
+        },
+        "6layer": {
+          "layer_type": "6layer",
+          "n_nodes": 25122,
+          "n_triangles": 47544,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_01/meshes_6layer/head_mesh.vtk",
+            "brainweb_subjects/subject_01/meshes_6layer/head_mesh.msh",
+            "brainweb_subjects/subject_01/meshes_6layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_01/meshes_6layer/head_mesh.npz"
+          ]
+        },
+        "9layer": {
+          "layer_type": "9layer",
+          "n_nodes": 24874,
+          "n_triangles": 46774,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_01/meshes_9layer/head_mesh.vtk",
+            "brainweb_subjects/subject_01/meshes_9layer/head_mesh.msh",
+            "brainweb_subjects/subject_01/meshes_9layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_01/meshes_9layer/head_mesh.npz"
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_02",
+      "layer_results": {
+        "3layer": {
+          "layer_type": "3layer",
+          "n_nodes": 27857,
+          "n_triangles": 52214,
+          "materials": [
+            1,
+            2,
+            3
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_02/meshes_3layer/head_mesh.vtk",
+            "brainweb_subjects/subject_02/meshes_3layer/head_mesh.msh",
+            "brainweb_subjects/subject_02/meshes_3layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_02/meshes_3layer/head_mesh.npz"
+          ]
+        },
+        "6layer": {
+          "layer_type": "6layer",
+          "n_nodes": 27781,
+          "n_triangles": 51944,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_02/meshes_6layer/head_mesh.vtk",
+            "brainweb_subjects/subject_02/meshes_6layer/head_mesh.msh",
+            "brainweb_subjects/subject_02/meshes_6layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_02/meshes_6layer/head_mesh.npz"
+          ]
+        },
+        "9layer": {
+          "layer_type": "9layer",
+          "n_nodes": 27344,
+          "n_triangles": 50622,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_02/meshes_9layer/head_mesh.vtk",
+            "brainweb_subjects/subject_02/meshes_9layer/head_mesh.msh",
+            "brainweb_subjects/subject_02/meshes_9layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_02/meshes_9layer/head_mesh.npz"
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_03",
+      "layer_results": {
+        "3layer": {
+          "layer_type": "3layer",
+          "n_nodes": 26433,
+          "n_triangles": 49512,
+          "materials": [
+            1,
+            2,
+            3
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_03/meshes_3layer/head_mesh.vtk",
+            "brainweb_subjects/subject_03/meshes_3layer/head_mesh.msh",
+            "brainweb_subjects/subject_03/meshes_3layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_03/meshes_3layer/head_mesh.npz"
+          ]
+        },
+        "6layer": {
+          "layer_type": "6layer",
+          "n_nodes": 26369,
+          "n_triangles": 49254,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_03/meshes_6layer/head_mesh.vtk",
+            "brainweb_subjects/subject_03/meshes_6layer/head_mesh.msh",
+            "brainweb_subjects/subject_03/meshes_6layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_03/meshes_6layer/head_mesh.npz"
+          ]
+        },
+        "9layer": {
+          "layer_type": "9layer",
+          "n_nodes": 26058,
+          "n_triangles": 48322,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_03/meshes_9layer/head_mesh.vtk",
+            "brainweb_subjects/subject_03/meshes_9layer/head_mesh.msh",
+            "brainweb_subjects/subject_03/meshes_9layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_03/meshes_9layer/head_mesh.npz"
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_04",
+      "layer_results": {
+        "3layer": {
+          "layer_type": "3layer",
+          "n_nodes": 24350,
+          "n_triangles": 45234,
+          "materials": [
+            1,
+            2,
+            3
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_04/meshes_3layer/head_mesh.vtk",
+            "brainweb_subjects/subject_04/meshes_3layer/head_mesh.msh",
+            "brainweb_subjects/subject_04/meshes_3layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_04/meshes_3layer/head_mesh.npz"
+          ]
+        },
+        "6layer": {
+          "layer_type": "6layer",
+          "n_nodes": 24300,
+          "n_triangles": 45056,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_04/meshes_6layer/head_mesh.vtk",
+            "brainweb_subjects/subject_04/meshes_6layer/head_mesh.msh",
+            "brainweb_subjects/subject_04/meshes_6layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_04/meshes_6layer/head_mesh.npz"
+          ]
+        },
+        "9layer": {
+          "layer_type": "9layer",
+          "n_nodes": 23908,
+          "n_triangles": 43820,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_04/meshes_9layer/head_mesh.vtk",
+            "brainweb_subjects/subject_04/meshes_9layer/head_mesh.msh",
+            "brainweb_subjects/subject_04/meshes_9layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_04/meshes_9layer/head_mesh.npz"
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_05",
+      "layer_results": {
+        "3layer": {
+          "layer_type": "3layer",
+          "n_nodes": 26147,
+          "n_triangles": 49300,
+          "materials": [
+            1,
+            2,
+            3
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_05/meshes_3layer/head_mesh.vtk",
+            "brainweb_subjects/subject_05/meshes_3layer/head_mesh.msh",
+            "brainweb_subjects/subject_05/meshes_3layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_05/meshes_3layer/head_mesh.npz"
+          ]
+        },
+        "6layer": {
+          "layer_type": "6layer",
+          "n_nodes": 26025,
+          "n_triangles": 48846,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_05/meshes_6layer/head_mesh.vtk",
+            "brainweb_subjects/subject_05/meshes_6layer/head_mesh.msh",
+            "brainweb_subjects/subject_05/meshes_6layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_05/meshes_6layer/head_mesh.npz"
+          ]
+        },
+        "9layer": {
+          "layer_type": "9layer",
+          "n_nodes": 25777,
+          "n_triangles": 48038,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_05/meshes_9layer/head_mesh.vtk",
+            "brainweb_subjects/subject_05/meshes_9layer/head_mesh.msh",
+            "brainweb_subjects/subject_05/meshes_9layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_05/meshes_9layer/head_mesh.npz"
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_06",
+      "layer_results": {
+        "3layer": {
+          "layer_type": "3layer",
+          "n_nodes": 25840,
+          "n_triangles": 48528,
+          "materials": [
+            1,
+            2,
+            3
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_06/meshes_3layer/head_mesh.vtk",
+            "brainweb_subjects/subject_06/meshes_3layer/head_mesh.msh",
+            "brainweb_subjects/subject_06/meshes_3layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_06/meshes_3layer/head_mesh.npz"
+          ]
+        },
+        "6layer": {
+          "layer_type": "6layer",
+          "n_nodes": 25593,
+          "n_triangles": 48022,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_06/meshes_6layer/head_mesh.vtk",
+            "brainweb_subjects/subject_06/meshes_6layer/head_mesh.msh",
+            "brainweb_subjects/subject_06/meshes_6layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_06/meshes_6layer/head_mesh.npz"
+          ]
+        },
+        "9layer": {
+          "layer_type": "9layer",
+          "n_nodes": 25418,
+          "n_triangles": 47168,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_06/meshes_9layer/head_mesh.vtk",
+            "brainweb_subjects/subject_06/meshes_9layer/head_mesh.msh",
+            "brainweb_subjects/subject_06/meshes_9layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_06/meshes_9layer/head_mesh.npz"
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_07",
+      "layer_results": {
+        "3layer": {
+          "layer_type": "3layer",
+          "n_nodes": 25275,
+          "n_triangles": 47440,
+          "materials": [
+            1,
+            2,
+            3
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_07/meshes_3layer/head_mesh.vtk",
+            "brainweb_subjects/subject_07/meshes_3layer/head_mesh.msh",
+            "brainweb_subjects/subject_07/meshes_3layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_07/meshes_3layer/head_mesh.npz"
+          ]
+        },
+        "6layer": {
+          "layer_type": "6layer",
+          "n_nodes": 25226,
+          "n_triangles": 47258,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_07/meshes_6layer/head_mesh.vtk",
+            "brainweb_subjects/subject_07/meshes_6layer/head_mesh.msh",
+            "brainweb_subjects/subject_07/meshes_6layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_07/meshes_6layer/head_mesh.npz"
+          ]
+        },
+        "9layer": {
+          "layer_type": "9layer",
+          "n_nodes": 24742,
+          "n_triangles": 45740,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_07/meshes_9layer/head_mesh.vtk",
+            "brainweb_subjects/subject_07/meshes_9layer/head_mesh.msh",
+            "brainweb_subjects/subject_07/meshes_9layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_07/meshes_9layer/head_mesh.npz"
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_08",
+      "layer_results": {
+        "3layer": {
+          "layer_type": "3layer",
+          "n_nodes": 26017,
+          "n_triangles": 49712,
+          "materials": [
+            1,
+            2,
+            3
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_08/meshes_3layer/head_mesh.vtk",
+            "brainweb_subjects/subject_08/meshes_3layer/head_mesh.msh",
+            "brainweb_subjects/subject_08/meshes_3layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_08/meshes_3layer/head_mesh.npz"
+          ]
+        },
+        "6layer": {
+          "layer_type": "6layer",
+          "n_nodes": 25967,
+          "n_triangles": 49534,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_08/meshes_6layer/head_mesh.vtk",
+            "brainweb_subjects/subject_08/meshes_6layer/head_mesh.msh",
+            "brainweb_subjects/subject_08/meshes_6layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_08/meshes_6layer/head_mesh.npz"
+          ]
+        },
+        "9layer": {
+          "layer_type": "9layer",
+          "n_nodes": 25804,
+          "n_triangles": 49034,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_08/meshes_9layer/head_mesh.vtk",
+            "brainweb_subjects/subject_08/meshes_9layer/head_mesh.msh",
+            "brainweb_subjects/subject_08/meshes_9layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_08/meshes_9layer/head_mesh.npz"
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_09",
+      "layer_results": {
+        "3layer": {
+          "layer_type": "3layer",
+          "n_nodes": 26568,
+          "n_triangles": 50814,
+          "materials": [
+            1,
+            2,
+            3
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_09/meshes_3layer/head_mesh.vtk",
+            "brainweb_subjects/subject_09/meshes_3layer/head_mesh.msh",
+            "brainweb_subjects/subject_09/meshes_3layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_09/meshes_3layer/head_mesh.npz"
+          ]
+        },
+        "6layer": {
+          "layer_type": "6layer",
+          "n_nodes": 26504,
+          "n_triangles": 50590,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_09/meshes_6layer/head_mesh.vtk",
+            "brainweb_subjects/subject_09/meshes_6layer/head_mesh.msh",
+            "brainweb_subjects/subject_09/meshes_6layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_09/meshes_6layer/head_mesh.npz"
+          ]
+        },
+        "9layer": {
+          "layer_type": "9layer",
+          "n_nodes": 26058,
+          "n_triangles": 49182,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_09/meshes_9layer/head_mesh.vtk",
+            "brainweb_subjects/subject_09/meshes_9layer/head_mesh.msh",
+            "brainweb_subjects/subject_09/meshes_9layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_09/meshes_9layer/head_mesh.npz"
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_10",
+      "layer_results": {
+        "3layer": {
+          "layer_type": "3layer",
+          "n_nodes": 26064,
+          "n_triangles": 49440,
+          "materials": [
+            1,
+            2,
+            3
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_10/meshes_3layer/head_mesh.vtk",
+            "brainweb_subjects/subject_10/meshes_3layer/head_mesh.msh",
+            "brainweb_subjects/subject_10/meshes_3layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_10/meshes_3layer/head_mesh.npz"
+          ]
+        },
+        "6layer": {
+          "layer_type": "6layer",
+          "n_nodes": 25986,
+          "n_triangles": 49170,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_10/meshes_6layer/head_mesh.vtk",
+            "brainweb_subjects/subject_10/meshes_6layer/head_mesh.msh",
+            "brainweb_subjects/subject_10/meshes_6layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_10/meshes_6layer/head_mesh.npz"
+          ]
+        },
+        "9layer": {
+          "layer_type": "9layer",
+          "n_nodes": 25479,
+          "n_triangles": 47564,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_10/meshes_9layer/head_mesh.vtk",
+            "brainweb_subjects/subject_10/meshes_9layer/head_mesh.msh",
+            "brainweb_subjects/subject_10/meshes_9layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_10/meshes_9layer/head_mesh.npz"
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_11",
+      "layer_results": {
+        "3layer": {
+          "layer_type": "3layer",
+          "n_nodes": 26365,
+          "n_triangles": 48706,
+          "materials": [
+            1,
+            2,
+            3
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_11/meshes_3layer/head_mesh.vtk",
+            "brainweb_subjects/subject_11/meshes_3layer/head_mesh.msh",
+            "brainweb_subjects/subject_11/meshes_3layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_11/meshes_3layer/head_mesh.npz"
+          ]
+        },
+        "6layer": {
+          "layer_type": "6layer",
+          "n_nodes": 26284,
+          "n_triangles": 48422,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_11/meshes_6layer/head_mesh.vtk",
+            "brainweb_subjects/subject_11/meshes_6layer/head_mesh.msh",
+            "brainweb_subjects/subject_11/meshes_6layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_11/meshes_6layer/head_mesh.npz"
+          ]
+        },
+        "9layer": {
+          "layer_type": "9layer",
+          "n_nodes": 25924,
+          "n_triangles": 47250,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_11/meshes_9layer/head_mesh.vtk",
+            "brainweb_subjects/subject_11/meshes_9layer/head_mesh.msh",
+            "brainweb_subjects/subject_11/meshes_9layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_11/meshes_9layer/head_mesh.npz"
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_12",
+      "layer_results": {
+        "3layer": {
+          "layer_type": "3layer",
+          "n_nodes": 26867,
+          "n_triangles": 51262,
+          "materials": [
+            1,
+            2,
+            3
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_12/meshes_3layer/head_mesh.vtk",
+            "brainweb_subjects/subject_12/meshes_3layer/head_mesh.msh",
+            "brainweb_subjects/subject_12/meshes_3layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_12/meshes_3layer/head_mesh.npz"
+          ]
+        },
+        "6layer": {
+          "layer_type": "6layer",
+          "n_nodes": 26785,
+          "n_triangles": 50992,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_12/meshes_6layer/head_mesh.vtk",
+            "brainweb_subjects/subject_12/meshes_6layer/head_mesh.msh",
+            "brainweb_subjects/subject_12/meshes_6layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_12/meshes_6layer/head_mesh.npz"
+          ]
+        },
+        "9layer": {
+          "layer_type": "9layer",
+          "n_nodes": 26410,
+          "n_triangles": 49774,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_12/meshes_9layer/head_mesh.vtk",
+            "brainweb_subjects/subject_12/meshes_9layer/head_mesh.msh",
+            "brainweb_subjects/subject_12/meshes_9layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_12/meshes_9layer/head_mesh.npz"
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_13",
+      "layer_results": {
+        "3layer": {
+          "layer_type": "3layer",
+          "n_nodes": 27640,
+          "n_triangles": 52930,
+          "materials": [
+            1,
+            2,
+            3
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_13/meshes_3layer/head_mesh.vtk",
+            "brainweb_subjects/subject_13/meshes_3layer/head_mesh.msh",
+            "brainweb_subjects/subject_13/meshes_3layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_13/meshes_3layer/head_mesh.npz"
+          ]
+        },
+        "6layer": {
+          "layer_type": "6layer",
+          "n_nodes": 27561,
+          "n_triangles": 52666,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_13/meshes_6layer/head_mesh.vtk",
+            "brainweb_subjects/subject_13/meshes_6layer/head_mesh.msh",
+            "brainweb_subjects/subject_13/meshes_6layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_13/meshes_6layer/head_mesh.npz"
+          ]
+        },
+        "9layer": {
+          "layer_type": "9layer",
+          "n_nodes": 26985,
+          "n_triangles": 50826,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_13/meshes_9layer/head_mesh.vtk",
+            "brainweb_subjects/subject_13/meshes_9layer/head_mesh.msh",
+            "brainweb_subjects/subject_13/meshes_9layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_13/meshes_9layer/head_mesh.npz"
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_14",
+      "layer_results": {
+        "3layer": {
+          "layer_type": "3layer",
+          "n_nodes": 26105,
+          "n_triangles": 49054,
+          "materials": [
+            1,
+            2,
+            3
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_14/meshes_3layer/head_mesh.vtk",
+            "brainweb_subjects/subject_14/meshes_3layer/head_mesh.msh",
+            "brainweb_subjects/subject_14/meshes_3layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_14/meshes_3layer/head_mesh.npz"
+          ]
+        },
+        "6layer": {
+          "layer_type": "6layer",
+          "n_nodes": 26085,
+          "n_triangles": 48984,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_14/meshes_6layer/head_mesh.vtk",
+            "brainweb_subjects/subject_14/meshes_6layer/head_mesh.msh",
+            "brainweb_subjects/subject_14/meshes_6layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_14/meshes_6layer/head_mesh.npz"
+          ]
+        },
+        "9layer": {
+          "layer_type": "9layer",
+          "n_nodes": 25733,
+          "n_triangles": 47862,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_14/meshes_9layer/head_mesh.vtk",
+            "brainweb_subjects/subject_14/meshes_9layer/head_mesh.msh",
+            "brainweb_subjects/subject_14/meshes_9layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_14/meshes_9layer/head_mesh.npz"
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_15",
+      "layer_results": {
+        "3layer": {
+          "layer_type": "3layer",
+          "n_nodes": 25281,
+          "n_triangles": 47274,
+          "materials": [
+            1,
+            2,
+            3
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_15/meshes_3layer/head_mesh.vtk",
+            "brainweb_subjects/subject_15/meshes_3layer/head_mesh.msh",
+            "brainweb_subjects/subject_15/meshes_3layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_15/meshes_3layer/head_mesh.npz"
+          ]
+        },
+        "6layer": {
+          "layer_type": "6layer",
+          "n_nodes": 25210,
+          "n_triangles": 47028,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_15/meshes_6layer/head_mesh.vtk",
+            "brainweb_subjects/subject_15/meshes_6layer/head_mesh.msh",
+            "brainweb_subjects/subject_15/meshes_6layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_15/meshes_6layer/head_mesh.npz"
+          ]
+        },
+        "9layer": {
+          "layer_type": "9layer",
+          "n_nodes": 24787,
+          "n_triangles": 45692,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_15/meshes_9layer/head_mesh.vtk",
+            "brainweb_subjects/subject_15/meshes_9layer/head_mesh.msh",
+            "brainweb_subjects/subject_15/meshes_9layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_15/meshes_9layer/head_mesh.npz"
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_16",
+      "layer_results": {
+        "3layer": {
+          "layer_type": "3layer",
+          "n_nodes": 24833,
+          "n_triangles": 45866,
+          "materials": [
+            1,
+            2,
+            3
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_16/meshes_3layer/head_mesh.vtk",
+            "brainweb_subjects/subject_16/meshes_3layer/head_mesh.msh",
+            "brainweb_subjects/subject_16/meshes_3layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_16/meshes_3layer/head_mesh.npz"
+          ]
+        },
+        "6layer": {
+          "layer_type": "6layer",
+          "n_nodes": 24741,
+          "n_triangles": 45554,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_16/meshes_6layer/head_mesh.vtk",
+            "brainweb_subjects/subject_16/meshes_6layer/head_mesh.msh",
+            "brainweb_subjects/subject_16/meshes_6layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_16/meshes_6layer/head_mesh.npz"
+          ]
+        },
+        "9layer": {
+          "layer_type": "9layer",
+          "n_nodes": 24502,
+          "n_triangles": 44794,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_16/meshes_9layer/head_mesh.vtk",
+            "brainweb_subjects/subject_16/meshes_9layer/head_mesh.msh",
+            "brainweb_subjects/subject_16/meshes_9layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_16/meshes_9layer/head_mesh.npz"
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_17",
+      "layer_results": {
+        "3layer": {
+          "layer_type": "3layer",
+          "n_nodes": 24510,
+          "n_triangles": 45976,
+          "materials": [
+            1,
+            2,
+            3
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_17/meshes_3layer/head_mesh.vtk",
+            "brainweb_subjects/subject_17/meshes_3layer/head_mesh.msh",
+            "brainweb_subjects/subject_17/meshes_3layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_17/meshes_3layer/head_mesh.npz"
+          ]
+        },
+        "6layer": {
+          "layer_type": "6layer",
+          "n_nodes": 24492,
+          "n_triangles": 45910,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_17/meshes_6layer/head_mesh.vtk",
+            "brainweb_subjects/subject_17/meshes_6layer/head_mesh.msh",
+            "brainweb_subjects/subject_17/meshes_6layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_17/meshes_6layer/head_mesh.npz"
+          ]
+        },
+        "9layer": {
+          "layer_type": "9layer",
+          "n_nodes": 24214,
+          "n_triangles": 45020,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_17/meshes_9layer/head_mesh.vtk",
+            "brainweb_subjects/subject_17/meshes_9layer/head_mesh.msh",
+            "brainweb_subjects/subject_17/meshes_9layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_17/meshes_9layer/head_mesh.npz"
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_18",
+      "layer_results": {
+        "3layer": {
+          "layer_type": "3layer",
+          "n_nodes": 25889,
+          "n_triangles": 48782,
+          "materials": [
+            1,
+            2,
+            3
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_18/meshes_3layer/head_mesh.vtk",
+            "brainweb_subjects/subject_18/meshes_3layer/head_mesh.msh",
+            "brainweb_subjects/subject_18/meshes_3layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_18/meshes_3layer/head_mesh.npz"
+          ]
+        },
+        "6layer": {
+          "layer_type": "6layer",
+          "n_nodes": 25757,
+          "n_triangles": 48348,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_18/meshes_6layer/head_mesh.vtk",
+            "brainweb_subjects/subject_18/meshes_6layer/head_mesh.msh",
+            "brainweb_subjects/subject_18/meshes_6layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_18/meshes_6layer/head_mesh.npz"
+          ]
+        },
+        "9layer": {
+          "layer_type": "9layer",
+          "n_nodes": 25616,
+          "n_triangles": 47888,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_18/meshes_9layer/head_mesh.vtk",
+            "brainweb_subjects/subject_18/meshes_9layer/head_mesh.msh",
+            "brainweb_subjects/subject_18/meshes_9layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_18/meshes_9layer/head_mesh.npz"
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_19",
+      "layer_results": {
+        "3layer": {
+          "layer_type": "3layer",
+          "n_nodes": 27106,
+          "n_triangles": 50882,
+          "materials": [
+            1,
+            2,
+            3
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_19/meshes_3layer/head_mesh.vtk",
+            "brainweb_subjects/subject_19/meshes_3layer/head_mesh.msh",
+            "brainweb_subjects/subject_19/meshes_3layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_19/meshes_3layer/head_mesh.npz"
+          ]
+        },
+        "6layer": {
+          "layer_type": "6layer",
+          "n_nodes": 27057,
+          "n_triangles": 50710,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_19/meshes_6layer/head_mesh.vtk",
+            "brainweb_subjects/subject_19/meshes_6layer/head_mesh.msh",
+            "brainweb_subjects/subject_19/meshes_6layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_19/meshes_6layer/head_mesh.npz"
+          ]
+        },
+        "9layer": {
+          "layer_type": "9layer",
+          "n_nodes": 26753,
+          "n_triangles": 49740,
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "pixel_size_mm": 2.0,
+          "subsample_factor": 2,
+          "files": [
+            "brainweb_subjects/subject_19/meshes_9layer/head_mesh.vtk",
+            "brainweb_subjects/subject_19/meshes_9layer/head_mesh.msh",
+            "brainweb_subjects/subject_19/meshes_9layer/head_mesh.xdmf",
+            "brainweb_subjects/subject_19/meshes_9layer/head_mesh.npz"
+          ]
+        }
+      }
+    }
+  ]
+}

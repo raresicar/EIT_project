@@ -1,7 +1,6 @@
 """
 Stroke Simulation Generator for EIT
 Creates synthetic stroke/hemorrhage samples by adding high-conductivity regions
-Based on Paldanius et al. - hemorrhage conductivity ~0.70 S/m at 100 kHz
 """
 
 import os
