@@ -76,8 +76,11 @@ def load_subject_slice(subject_file, slice_type='middle'):
 
 def clean_model_minimal(model):
     """
-    Minimal cleaning: only remove very small isolated background pixels
-    Does NOT fill holes to preserve anatomical accuracy
+    Minimal cleaning:
+      - remove very small isolated background pixels
+      - fill enclosed background holes with nearest tissue label
+    This keeps anatomical structure but ensures layers form a clean,
+    non-overlapping partition of the head region (no internal gaps).
     
     Args:
         model: 2D array of tissue labels
@@ -86,36 +89,35 @@ def clean_model_minimal(model):
         cleaned_model: Model with minimal cleanup
     """
     from scipy.ndimage import label as nd_label
-    
+
     cleaned = model.copy()
-    
-    # Only remove tiny isolated background regions (< 10 pixels)
-    # These are likely noise/artifacts, not anatomical gaps
+
+    # ------------------------------------------------------------------
+    # 1) OLD BEHAVIOUR: remove tiny isolated background "speckles"
+    # ------------------------------------------------------------------
     background_mask = (cleaned == 0)
     labeled_bg, n_regions = nd_label(background_mask)
-    
+
     for region_id in range(1, n_regions + 1):
         region_mask = (labeled_bg == region_id)
         region_size = region_mask.sum()
-        
+
         # Only fill very tiny regions (< 10 pixels)
         if region_size < 10:
             # Find nearest tissue
             y_coords, x_coords = region_mask.nonzero()
             if len(y_coords) > 0:
-                # Use first pixel to find nearest tissue
                 y, x = y_coords[0], x_coords[0]
-                
+
                 # Search in small radius for nearest tissue
                 found = False
                 for radius in range(1, 5):
                     for dy in range(-radius, radius + 1):
                         for dx in range(-radius, radius + 1):
                             ny, nx = y + dy, x + dx
-                            if (0 <= ny < cleaned.shape[0] and 
+                            if (0 <= ny < cleaned.shape[0] and
                                 0 <= nx < cleaned.shape[1] and
                                 cleaned[ny, nx] > 0):
-                                # Fill with this tissue
                                 cleaned[region_mask] = cleaned[ny, nx]
                                 found = True
                                 break
@@ -123,8 +125,78 @@ def clean_model_minimal(model):
                             break
                     if found:
                         break
-    
+
+    # ------------------------------------------------------------------
+    # 2) NEW: fill interior background "holes" inside the head
+    # ------------------------------------------------------------------
+    tissue_mask = cleaned > 0
+
+    # Fill holes inside the main head region (outside stays background)
+    filled_head = binary_fill_holes(tissue_mask)
+    hole_mask = filled_head & ~tissue_mask    # background pixels inside head
+
+    if hole_mask.any():
+        # Map each hole pixel to its nearest tissue pixel
+        # (distance computed in the complement of tissue_mask)
+        _, indices = distance_transform_edt(~tissue_mask, return_indices=True)
+        ys = indices[0][hole_mask]
+        xs = indices[1][hole_mask]
+
+        cleaned[hole_mask] = cleaned[ys, xs]
+
     return cleaned
+
+# def clean_model_minimal(model):
+#     """
+#     Minimal cleaning: only remove very small isolated background pixels
+#     Does NOT fill holes to preserve anatomical accuracy
+    
+#     Args:
+#         model: 2D array of tissue labels
+    
+#     Returns:
+#         cleaned_model: Model with minimal cleanup
+#     """
+#     from scipy.ndimage import label as nd_label
+    
+#     cleaned = model.copy()
+    
+#     # Only remove tiny isolated background regions (< 10 pixels)
+#     # These are likely noise/artifacts, not anatomical gaps
+#     background_mask = (cleaned == 0)
+#     labeled_bg, n_regions = nd_label(background_mask)
+    
+#     for region_id in range(1, n_regions + 1):
+#         region_mask = (labeled_bg == region_id)
+#         region_size = region_mask.sum()
+        
+#         # Only fill very tiny regions (< 10 pixels)
+#         if region_size < 10:
+#             # Find nearest tissue
+#             y_coords, x_coords = region_mask.nonzero()
+#             if len(y_coords) > 0:
+#                 # Use first pixel to find nearest tissue
+#                 y, x = y_coords[0], x_coords[0]
+                
+#                 # Search in small radius for nearest tissue
+#                 found = False
+#                 for radius in range(1, 5):
+#                     for dy in range(-radius, radius + 1):
+#                         for dx in range(-radius, radius + 1):
+#                             ny, nx = y + dy, x + dx
+#                             if (0 <= ny < cleaned.shape[0] and 
+#                                 0 <= nx < cleaned.shape[1] and
+#                                 cleaned[ny, nx] > 0):
+#                                 # Fill with this tissue
+#                                 cleaned[region_mask] = cleaned[ny, nx]
+#                                 found = True
+#                                 break
+#                         if found:
+#                             break
+#                     if found:
+#                         break
+    
+#     return cleaned
 
 
 # =============================================================================

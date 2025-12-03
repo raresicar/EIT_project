@@ -4,5 +4,4 @@ addpath(genpath(eidors_root))
 run(fullfile(eidors_root, 'eidors_startup.m'))
 % =====================
 
-
 disp('EIDORS ready!');

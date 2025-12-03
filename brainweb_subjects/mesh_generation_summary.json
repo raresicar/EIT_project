@@ -9,8 +9,8 @@
       "layer_results": {
         "3layer": {
           "layer_type": "3layer",
-          "n_nodes": 26431,
-          "n_triangles": 49644,
+          "n_nodes": 27690,
+          "n_triangles": 54626,
           "materials": [
             1,
             2,
@@ -27,8 +27,8 @@
         },
         "6layer": {
           "layer_type": "6layer",
-          "n_nodes": 26358,
-          "n_triangles": 49398,
+          "n_nodes": 27690,
+          "n_triangles": 54626,
           "materials": [
             1,
             2,
@@ -48,8 +48,8 @@
         },
         "9layer": {
           "layer_type": "9layer",
-          "n_nodes": 26198,
-          "n_triangles": 48902,
+          "n_nodes": 27690,
+          "n_triangles": 54626,
           "materials": [
             1,
             2,
@@ -77,8 +77,8 @@
       "layer_results": {
         "3layer": {
           "layer_type": "3layer",
-          "n_nodes": 25190,
-          "n_triangles": 47792,
+          "n_nodes": 26002,
+          "n_triangles": 51276,
           "materials": [
             1,
             2,
@@ -95,8 +95,8 @@
         },
         "6layer": {
           "layer_type": "6layer",
-          "n_nodes": 25122,
-          "n_triangles": 47544,
+          "n_nodes": 26002,
+          "n_triangles": 51276,
           "materials": [
             1,
             2,
@@ -116,8 +116,8 @@
         },
         "9layer": {
           "layer_type": "9layer",
-          "n_nodes": 24874,
-          "n_triangles": 46774,
+          "n_nodes": 26002,
+          "n_triangles": 51276,
           "materials": [
             1,
             2,
@@ -145,8 +145,8 @@
       "layer_results": {
         "3layer": {
           "layer_type": "3layer",
-          "n_nodes": 27857,
-          "n_triangles": 52214,
+          "n_nodes": 29390,
+          "n_triangles": 58010,
           "materials": [
             1,
             2,
@@ -163,8 +163,8 @@
         },
         "6layer": {
           "layer_type": "6layer",
-          "n_nodes": 27781,
-          "n_triangles": 51944,
+          "n_nodes": 29390,
+          "n_triangles": 58010,
           "materials": [
             1,
             2,
@@ -184,8 +184,8 @@
         },
         "9layer": {
           "layer_type": "9layer",
-          "n_nodes": 27344,
-          "n_triangles": 50622,
+          "n_nodes": 29390,
+          "n_triangles": 58010,
           "materials": [
             1,
             2,
@@ -213,8 +213,8 @@
       "layer_results": {
         "3layer": {
           "layer_type": "3layer",
-          "n_nodes": 26433,
-          "n_triangles": 49512,
+          "n_nodes": 27957,
+          "n_triangles": 55106,
           "materials": [
             1,
             2,
@@ -231,8 +231,8 @@
         },
         "6layer": {
           "layer_type": "6layer",
-          "n_nodes": 26369,
-          "n_triangles": 49254,
+          "n_nodes": 27957,
+          "n_triangles": 55106,
           "materials": [
             1,
             2,
@@ -252,8 +252,8 @@
         },
         "9layer": {
           "layer_type": "9layer",
-          "n_nodes": 26058,
-          "n_triangles": 48322,
+          "n_nodes": 27957,
+          "n_triangles": 55106,
           "materials": [
             1,
             2,
@@ -281,8 +281,8 @@
       "layer_results": {
         "3layer": {
           "layer_type": "3layer",
-          "n_nodes": 24350,
-          "n_triangles": 45234,
+          "n_nodes": 26079,
+          "n_triangles": 51428,
           "materials": [
             1,
             2,
@@ -299,8 +299,8 @@
         },
         "6layer": {
           "layer_type": "6layer",
-          "n_nodes": 24300,
-          "n_triangles": 45056,
+          "n_nodes": 26079,
+          "n_triangles": 51428,
           "materials": [
             1,
             2,
@@ -320,8 +320,8 @@
         },
         "9layer": {
           "layer_type": "9layer",
-          "n_nodes": 23908,
-          "n_triangles": 43820,
+          "n_nodes": 26079,
+          "n_triangles": 51428,
           "materials": [
             1,
             2,
@@ -349,8 +349,8 @@
       "layer_results": {
         "3layer": {
           "layer_type": "3layer",
-          "n_nodes": 26147,
-          "n_triangles": 49300,
+          "n_nodes": 27665,
+          "n_triangles": 54572,
           "materials": [
             1,
             2,
@@ -367,8 +367,8 @@
         },
         "6layer": {
           "layer_type": "6layer",
-          "n_nodes": 26025,
-          "n_triangles": 48846,
+          "n_nodes": 27665,
+          "n_triangles": 54572,
           "materials": [
             1,
             2,
@@ -388,8 +388,8 @@
         },
         "9layer": {
           "layer_type": "9layer",
-          "n_nodes": 25777,
-          "n_triangles": 48038,
+          "n_nodes": 27665,
+          "n_triangles": 54572,
           "materials": [
             1,
             2,
@@ -417,8 +417,8 @@
       "layer_results": {
         "3layer": {
           "layer_type": "3layer",
-          "n_nodes": 25840,
-          "n_triangles": 48528,
+          "n_nodes": 27246,
+          "n_triangles": 53688,
           "materials": [
             1,
             2,
@@ -435,8 +435,8 @@
         },
         "6layer": {
           "layer_type": "6layer",
-          "n_nodes": 25593,
-          "n_triangles": 48022,
+          "n_nodes": 27045,
+          "n_triangles": 53346,
           "materials": [
             1,
             2,
@@ -456,8 +456,8 @@
         },
         "9layer": {
           "layer_type": "9layer",
-          "n_nodes": 25418,
-          "n_triangles": 47168,
+          "n_nodes": 27246,
+          "n_triangles": 53688,
           "materials": [
             1,
             2,
@@ -485,8 +485,8 @@
       "layer_results": {
         "3layer": {
           "layer_type": "3layer",
-          "n_nodes": 25275,
-          "n_triangles": 47440,
+          "n_nodes": 26886,
+          "n_triangles": 53024,
           "materials": [
             1,
             2,
@@ -503,8 +503,8 @@
         },
         "6layer": {
           "layer_type": "6layer",
-          "n_nodes": 25226,
-          "n_triangles": 47258,
+          "n_nodes": 26886,
+          "n_triangles": 53024,
           "materials": [
             1,
             2,
@@ -524,8 +524,8 @@
         },
         "9layer": {
           "layer_type": "9layer",
-          "n_nodes": 24742,
-          "n_triangles": 45740,
+          "n_nodes": 26886,
+          "n_triangles": 53024,
           "materials": [
             1,
             2,
@@ -553,8 +553,8 @@
       "layer_results": {
         "3layer": {
           "layer_type": "3layer",
-          "n_nodes": 26017,
-          "n_triangles": 49712,
+          "n_nodes": 27090,
+          "n_triangles": 53436,
           "materials": [
             1,
             2,
@@ -571,8 +571,8 @@
         },
         "6layer": {
           "layer_type": "6layer",
-          "n_nodes": 25967,
-          "n_triangles": 49534,
+          "n_nodes": 27090,
+          "n_triangles": 53436,
           "materials": [
             1,
             2,
@@ -592,8 +592,8 @@
         },
         "9layer": {
           "layer_type": "9layer",
-          "n_nodes": 25804,
-          "n_triangles": 49034,
+          "n_nodes": 27090,
+          "n_triangles": 53436,
           "materials": [
             1,
             2,
@@ -621,8 +621,8 @@
       "layer_results": {
         "3layer": {
           "layer_type": "3layer",
-          "n_nodes": 26568,
-          "n_triangles": 50814,
+          "n_nodes": 27182,
+          "n_triangles": 53608,
           "materials": [
             1,
             2,
@@ -639,8 +639,8 @@
         },
         "6layer": {
           "layer_type": "6layer",
-          "n_nodes": 26504,
-          "n_triangles": 50590,
+          "n_nodes": 27182,
+          "n_triangles": 53608,
           "materials": [
             1,
             2,
@@ -660,8 +660,8 @@
         },
         "9layer": {
           "layer_type": "9layer",
-          "n_nodes": 26058,
-          "n_triangles": 49182,
+          "n_nodes": 27182,
+          "n_triangles": 53608,
           "materials": [
             1,
             2,
@@ -689,8 +689,8 @@
       "layer_results": {
         "3layer": {
           "layer_type": "3layer",
-          "n_nodes": 26064,
-          "n_triangles": 49440,
+          "n_nodes": 26897,
+          "n_triangles": 53056,
           "materials": [
             1,
             2,
@@ -707,8 +707,8 @@
         },
         "6layer": {
           "layer_type": "6layer",
-          "n_nodes": 25986,
-          "n_triangles": 49170,
+          "n_nodes": 26897,
+          "n_triangles": 53056,
           "materials": [
             1,
             2,
@@ -728,8 +728,8 @@
         },
         "9layer": {
           "layer_type": "9layer",
-          "n_nodes": 25479,
-          "n_triangles": 47564,
+          "n_nodes": 26897,
+          "n_triangles": 53056,
           "materials": [
             1,
             2,
@@ -757,8 +757,8 @@
       "layer_results": {
         "3layer": {
           "layer_type": "3layer",
-          "n_nodes": 26365,
-          "n_triangles": 48706,
+          "n_nodes": 28055,
+          "n_triangles": 55352,
           "materials": [
             1,
             2,
@@ -775,8 +775,8 @@
         },
         "6layer": {
           "layer_type": "6layer",
-          "n_nodes": 26284,
-          "n_triangles": 48422,
+          "n_nodes": 28055,
+          "n_triangles": 55352,
           "materials": [
             1,
             2,
@@ -796,8 +796,8 @@
         },
         "9layer": {
           "layer_type": "9layer",
-          "n_nodes": 25924,
-          "n_triangles": 47250,
+          "n_nodes": 28055,
+          "n_triangles": 55352,
           "materials": [
             1,
             2,
@@ -825,8 +825,8 @@
       "layer_results": {
         "3layer": {
           "layer_type": "3layer",
-          "n_nodes": 26867,
-          "n_triangles": 51262,
+          "n_nodes": 27956,
+          "n_triangles": 55150,
           "materials": [
             1,
             2,
@@ -843,8 +843,8 @@
         },
         "6layer": {
           "layer_type": "6layer",
-          "n_nodes": 26785,
-          "n_triangles": 50992,
+          "n_nodes": 27956,
+          "n_triangles": 55150,
           "materials": [
             1,
             2,
@@ -864,8 +864,8 @@
         },
         "9layer": {
           "layer_type": "9layer",
-          "n_nodes": 26410,
-          "n_triangles": 49774,
+          "n_nodes": 27956,
+          "n_triangles": 55150,
           "materials": [
             1,
             2,
@@ -893,8 +893,8 @@
       "layer_results": {
         "3layer": {
           "layer_type": "3layer",
-          "n_nodes": 27640,
-          "n_triangles": 52930,
+          "n_nodes": 28198,
+          "n_triangles": 55624,
           "materials": [
             1,
             2,
@@ -911,8 +911,8 @@
         },
         "6layer": {
           "layer_type": "6layer",
-          "n_nodes": 27561,
-          "n_triangles": 52666,
+          "n_nodes": 28198,
+          "n_triangles": 55624,
           "materials": [
             1,
             2,
@@ -932,8 +932,8 @@
         },
         "9layer": {
           "layer_type": "9layer",
-          "n_nodes": 26985,
-          "n_triangles": 50826,
+          "n_nodes": 28198,
+          "n_triangles": 55624,
           "materials": [
             1,
             2,
@@ -961,8 +961,8 @@
       "layer_results": {
         "3layer": {
           "layer_type": "3layer",
-          "n_nodes": 26105,
-          "n_triangles": 49054,
+          "n_nodes": 27940,
+          "n_triangles": 55124,
           "materials": [
             1,
             2,
@@ -979,8 +979,8 @@
         },
         "6layer": {
           "layer_type": "6layer",
-          "n_nodes": 26085,
-          "n_triangles": 48984,
+          "n_nodes": 27940,
+          "n_triangles": 55124,
           "materials": [
             1,
             2,
@@ -1000,8 +1000,8 @@
         },
         "9layer": {
           "layer_type": "9layer",
-          "n_nodes": 25733,
-          "n_triangles": 47862,
+          "n_nodes": 27940,
+          "n_triangles": 55124,
           "materials": [
             1,
             2,
@@ -1029,8 +1029,8 @@
       "layer_results": {
         "3layer": {
           "layer_type": "3layer",
-          "n_nodes": 25281,
-          "n_triangles": 47274,
+          "n_nodes": 27256,
+          "n_triangles": 53768,
           "materials": [
             1,
             2,
@@ -1047,8 +1047,8 @@
         },
         "6layer": {
           "layer_type": "6layer",
-          "n_nodes": 25210,
-          "n_triangles": 47028,
+          "n_nodes": 27256,
+          "n_triangles": 53768,
           "materials": [
             1,
             2,
@@ -1068,8 +1068,8 @@
         },
         "9layer": {
           "layer_type": "9layer",
-          "n_nodes": 24787,
-          "n_triangles": 45692,
+          "n_nodes": 27256,
+          "n_triangles": 53768,
           "materials": [
             1,
             2,
@@ -1097,8 +1097,8 @@
       "layer_results": {
         "3layer": {
           "layer_type": "3layer",
-          "n_nodes": 24833,
-          "n_triangles": 45866,
+          "n_nodes": 26446,
+          "n_triangles": 52156,
           "materials": [
             1,
             2,
@@ -1115,8 +1115,8 @@
         },
         "6layer": {
           "layer_type": "6layer",
-          "n_nodes": 24741,
-          "n_triangles": 45554,
+          "n_nodes": 26446,
+          "n_triangles": 52156,
           "materials": [
             1,
             2,
@@ -1136,8 +1136,8 @@
         },
         "9layer": {
           "layer_type": "9layer",
-          "n_nodes": 24502,
-          "n_triangles": 44794,
+          "n_nodes": 26446,
+          "n_triangles": 52156,
           "materials": [
             1,
             2,
@@ -1165,8 +1165,8 @@
       "layer_results": {
         "3layer": {
           "layer_type": "3layer",
-          "n_nodes": 24510,
-          "n_triangles": 45976,
+          "n_nodes": 26091,
+          "n_triangles": 51454,
           "materials": [
             1,
             2,
@@ -1183,8 +1183,8 @@
         },
         "6layer": {
           "layer_type": "6layer",
-          "n_nodes": 24492,
-          "n_triangles": 45910,
+          "n_nodes": 26091,
+          "n_triangles": 51454,
           "materials": [
             1,
             2,
@@ -1204,8 +1204,8 @@
         },
         "9layer": {
           "layer_type": "9layer",
-          "n_nodes": 24214,
-          "n_triangles": 45020,
+          "n_nodes": 26091,
+          "n_triangles": 51454,
           "materials": [
             1,
             2,
@@ -1233,8 +1233,8 @@
       "layer_results": {
         "3layer": {
           "layer_type": "3layer",
-          "n_nodes": 25889,
-          "n_triangles": 48782,
+          "n_nodes": 27200,
+          "n_triangles": 53656,
           "materials": [
             1,
             2,
@@ -1251,8 +1251,8 @@
         },
         "6layer": {
           "layer_type": "6layer",
-          "n_nodes": 25757,
-          "n_triangles": 48348,
+          "n_nodes": 27200,
+          "n_triangles": 53656,
           "materials": [
             1,
             2,
@@ -1272,8 +1272,8 @@
         },
         "9layer": {
           "layer_type": "9layer",
-          "n_nodes": 25616,
-          "n_triangles": 47888,
+          "n_nodes": 27200,
+          "n_triangles": 53656,
           "materials": [
             1,
             2,
@@ -1301,8 +1301,8 @@
       "layer_results": {
         "3layer": {
           "layer_type": "3layer",
-          "n_nodes": 27106,
-          "n_triangles": 50882,
+          "n_nodes": 28202,
+          "n_triangles": 55646,
           "materials": [
             1,
             2,
@@ -1319,8 +1319,8 @@
         },
         "6layer": {
           "layer_type": "6layer",
-          "n_nodes": 27057,
-          "n_triangles": 50710,
+          "n_nodes": 28202,
+          "n_triangles": 55646,
           "materials": [
             1,
             2,
@@ -1340,8 +1340,8 @@
         },
         "9layer": {
           "layer_type": "9layer",
-          "n_nodes": 26753,
-          "n_triangles": 49740,
+          "n_nodes": 28202,
+          "n_triangles": 55646,
           "materials": [
             1,
             2,

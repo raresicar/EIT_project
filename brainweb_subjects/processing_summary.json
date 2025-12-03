@@ -17,8 +17,8 @@
           2,
           3
         ],
-        "background_pixels": 51404,
-        "tissue_pixels": 105704
+        "background_pixels": 46315,
+        "tissue_pixels": 110793
       },
       "6layer": {
         "unique_labels": [
@@ -30,8 +30,8 @@
           5,
           6
         ],
-        "background_pixels": 51706,
-        "tissue_pixels": 105402
+        "background_pixels": 46315,
+        "tissue_pixels": 110793
       },
       "9layer": {
         "unique_labels": [
@@ -46,8 +46,8 @@
           8,
           9
         ],
-        "background_pixels": 52347,
-        "tissue_pixels": 104761
+        "background_pixels": 46315,
+        "tissue_pixels": 110793
       }
     },
     {
@@ -64,8 +64,8 @@
           2,
           3
         ],
-        "background_pixels": 56326,
-        "tissue_pixels": 100782
+        "background_pixels": 53090,
+        "tissue_pixels": 104018
       },
       "6layer": {
         "unique_labels": [
@@ -77,8 +77,8 @@
           5,
           6
         ],
-        "background_pixels": 56580,
-        "tissue_pixels": 100528
+        "background_pixels": 53090,
+        "tissue_pixels": 104018
       },
       "9layer": {
         "unique_labels": [
@@ -93,8 +93,8 @@
           8,
           9
         ],
-        "background_pixels": 57588,
-        "tissue_pixels": 99520
+        "background_pixels": 53090,
+        "tissue_pixels": 104018
       }
     },
     {
@@ -111,8 +111,8 @@
           2,
           3
         ],
-        "background_pixels": 45701,
-        "tissue_pixels": 111407
+        "background_pixels": 39570,
+        "tissue_pixels": 117538
       },
       "6layer": {
         "unique_labels": [
@@ -124,8 +124,8 @@
           5,
           6
         ],
-        "background_pixels": 46004,
-        "tissue_pixels": 111104
+        "background_pixels": 39570,
+        "tissue_pixels": 117538
       },
       "9layer": {
         "unique_labels": [
@@ -140,8 +140,8 @@
           8,
           9
         ],
-        "background_pixels": 47760,
-        "tissue_pixels": 109348
+        "background_pixels": 39570,
+        "tissue_pixels": 117538
       }
     },
     {
@@ -158,8 +158,8 @@
           2,
           3
         ],
-        "background_pixels": 51325,
-        "tissue_pixels": 105783
+        "background_pixels": 45308,
+        "tissue_pixels": 111800
       },
       "6layer": {
         "unique_labels": [
@@ -171,8 +171,8 @@
           5,
           6
         ],
-        "background_pixels": 51592,
-        "tissue_pixels": 105516
+        "background_pixels": 45308,
+        "tissue_pixels": 111800
       },
       "9layer": {
         "unique_labels": [
@@ -187,8 +187,8 @@
           8,
           9
         ],
-        "background_pixels": 52821,
-        "tissue_pixels": 104287
+        "background_pixels": 45308,
+        "tissue_pixels": 111800
       }
     },
     {
@@ -205,8 +205,8 @@
           2,
           3
         ],
-        "background_pixels": 59600,
-        "tissue_pixels": 97508
+        "background_pixels": 52775,
+        "tissue_pixels": 104333
       },
       "6layer": {
         "unique_labels": [
@@ -218,8 +218,8 @@
           5,
           6
         ],
-        "background_pixels": 59800,
-        "tissue_pixels": 97308
+        "background_pixels": 52775,
+        "tissue_pixels": 104333
       },
       "9layer": {
         "unique_labels": [
@@ -234,8 +234,8 @@
           8,
           9
         ],
-        "background_pixels": 61356,
-        "tissue_pixels": 95752
+        "background_pixels": 52775,
+        "tissue_pixels": 104333
       }
     },
     {
@@ -252,8 +252,8 @@
           2,
           3
         ],
-        "background_pixels": 52432,
-        "tissue_pixels": 104676
+        "background_pixels": 46439,
+        "tissue_pixels": 110669
       },
       "6layer": {
         "unique_labels": [
@@ -265,8 +265,8 @@
           5,
           6
         ],
-        "background_pixels": 52913,
-        "tissue_pixels": 104195
+        "background_pixels": 46439,
+        "tissue_pixels": 110669
       },
       "9layer": {
         "unique_labels": [
@@ -281,8 +281,8 @@
           8,
           9
         ],
-        "background_pixels": 53892,
-        "tissue_pixels": 103216
+        "background_pixels": 46439,
+        "tissue_pixels": 110669
       }
     },
     {
@@ -299,8 +299,8 @@
           2,
           3
         ],
-        "background_pixels": 53778,
-        "tissue_pixels": 103330
+        "background_pixels": 48151,
+        "tissue_pixels": 108957
       },
       "6layer": {
         "unique_labels": [
@@ -312,8 +312,8 @@
           5,
           6
         ],
-        "background_pixels": 54762,
-        "tissue_pixels": 102346
+        "background_pixels": 48947,
+        "tissue_pixels": 108161
       },
       "9layer": {
         "unique_labels": [
@@ -328,8 +328,8 @@
           8,
           9
         ],
-        "background_pixels": 55423,
-        "tissue_pixels": 101685
+        "background_pixels": 48151,
+        "tissue_pixels": 108957
       }
     },
     {
@@ -346,8 +346,8 @@
           2,
           3
         ],
-        "background_pixels": 55998,
-        "tissue_pixels": 101110
+        "background_pixels": 49583,
+        "tissue_pixels": 107525
       },
       "6layer": {
         "unique_labels": [
@@ -359,8 +359,8 @@
           5,
           6
         ],
-        "background_pixels": 56196,
-        "tissue_pixels": 100912
+        "background_pixels": 49583,
+        "tissue_pixels": 107525
       },
       "9layer": {
         "unique_labels": [
@@ -375,8 +375,8 @@
           8,
           9
         ],
-        "background_pixels": 58164,
-        "tissue_pixels": 98944
+        "background_pixels": 49583,
+        "tissue_pixels": 107525
       }
     },
     {
@@ -393,8 +393,8 @@
           2,
           3
         ],
-        "background_pixels": 53058,
-        "tissue_pixels": 104050
+        "background_pixels": 48743,
+        "tissue_pixels": 108365
       },
       "6layer": {
         "unique_labels": [
@@ -406,8 +406,8 @@
           5,
           6
         ],
-        "background_pixels": 53254,
-        "tissue_pixels": 103854
+        "background_pixels": 48743,
+        "tissue_pixels": 108365
       },
       "9layer": {
         "unique_labels": [
@@ -422,8 +422,8 @@
           8,
           9
         ],
-        "background_pixels": 53890,
-        "tissue_pixels": 103218
+        "background_pixels": 48743,
+        "tissue_pixels": 108365
       }
     },
     {
@@ -440,8 +440,8 @@
           2,
           3
         ],
-        "background_pixels": 50861,
-        "tissue_pixels": 106247
+        "background_pixels": 48378,
+        "tissue_pixels": 108730
       },
       "6layer": {
         "unique_labels": [
@@ -453,8 +453,8 @@
           5,
           6
         ],
-        "background_pixels": 51113,
-        "tissue_pixels": 105995
+        "background_pixels": 48378,
+        "tissue_pixels": 108730
       },
       "9layer": {
         "unique_labels": [
@@ -469,8 +469,8 @@
           8,
           9
         ],
-        "background_pixels": 52922,
-        "tissue_pixels": 104186
+        "background_pixels": 48378,
+        "tissue_pixels": 108730
       }
     },
     {
@@ -487,8 +487,8 @@
           2,
           3
         ],
-        "background_pixels": 52902,
-        "tissue_pixels": 104206
+        "background_pixels": 49543,
+        "tissue_pixels": 107565
       },
       "6layer": {
         "unique_labels": [
@@ -500,8 +500,8 @@
           5,
           6
         ],
-        "background_pixels": 53223,
-        "tissue_pixels": 103885
+        "background_pixels": 49543,
+        "tissue_pixels": 107565
       },
       "9layer": {
         "unique_labels": [
@@ -516,8 +516,8 @@
           8,
           9
         ],
-        "background_pixels": 55237,
-        "tissue_pixels": 101871
+        "background_pixels": 49543,
+        "tissue_pixels": 107565
       }
     },
     {
@@ -534,8 +534,8 @@
           2,
           3
         ],
-        "background_pixels": 51527,
-        "tissue_pixels": 105581
+        "background_pixels": 44861,
+        "tissue_pixels": 112247
       },
       "6layer": {
         "unique_labels": [
@@ -547,8 +547,8 @@
           5,
           6
         ],
-        "background_pixels": 51831,
-        "tissue_pixels": 105277
+        "background_pixels": 44861,
+        "tissue_pixels": 112247
       },
       "9layer": {
         "unique_labels": [
@@ -563,8 +563,8 @@
           8,
           9
         ],
-        "background_pixels": 53288,
-        "tissue_pixels": 103820
+        "background_pixels": 44861,
+        "tissue_pixels": 112247
       }
     },
     {
@@ -581,8 +581,8 @@
           2,
           3
         ],
-        "background_pixels": 49635,
-        "tissue_pixels": 107473
+        "background_pixels": 45297,
+        "tissue_pixels": 111811
       },
       "6layer": {
         "unique_labels": [
@@ -594,8 +594,8 @@
           5,
           6
         ],
-        "background_pixels": 49943,
-        "tissue_pixels": 107165
+        "background_pixels": 45297,
+        "tissue_pixels": 111811
       },
       "9layer": {
         "unique_labels": [
@@ -610,8 +610,8 @@
           8,
           9
         ],
-        "background_pixels": 51433,
-        "tissue_pixels": 105675
+        "background_pixels": 45297,
+        "tissue_pixels": 111811
       }
     },
     {
@@ -628,8 +628,8 @@
           2,
           3
         ],
-        "background_pixels": 46631,
-        "tissue_pixels": 110477
+        "background_pixels": 44309,
+        "tissue_pixels": 112799
       },
       "6layer": {
         "unique_labels": [
@@ -641,8 +641,8 @@
           5,
           6
         ],
-        "background_pixels": 46967,
-        "tissue_pixels": 110141
+        "background_pixels": 44309,
+        "tissue_pixels": 112799
       },
       "9layer": {
         "unique_labels": [
@@ -657,8 +657,8 @@
           8,
           9
         ],
-        "background_pixels": 49158,
-        "tissue_pixels": 107950
+        "background_pixels": 44309,
+        "tissue_pixels": 112799
       }
     },
     {
@@ -675,8 +675,8 @@
           2,
           3
         ],
-        "background_pixels": 52782,
-        "tissue_pixels": 104326
+        "background_pixels": 45344,
+        "tissue_pixels": 111764
       },
       "6layer": {
         "unique_labels": [
@@ -688,8 +688,8 @@
           5,
           6
         ],
-        "background_pixels": 52857,
-        "tissue_pixels": 104251
+        "background_pixels": 45344,
+        "tissue_pixels": 111764
       },
       "9layer": {
         "unique_labels": [
@@ -704,8 +704,8 @@
           8,
           9
         ],
-        "background_pixels": 54237,
-        "tissue_pixels": 102871
+        "background_pixels": 45344,
+        "tissue_pixels": 111764
       }
     },
     {
@@ -722,8 +722,8 @@
           2,
           3
         ],
-        "background_pixels": 55927,
-        "tissue_pixels": 101181
+        "background_pixels": 48052,
+        "tissue_pixels": 109056
       },
       "6layer": {
         "unique_labels": [
@@ -735,8 +735,8 @@
           5,
           6
         ],
-        "background_pixels": 56207,
-        "tissue_pixels": 100901
+        "background_pixels": 48052,
+        "tissue_pixels": 109056
       },
       "9layer": {
         "unique_labels": [
@@ -751,8 +751,8 @@
           8,
           9
         ],
-        "background_pixels": 57857,
-        "tissue_pixels": 99251
+        "background_pixels": 48052,
+        "tissue_pixels": 109056
       }
     },
     {
@@ -769,8 +769,8 @@
           2,
           3
         ],
-        "background_pixels": 57652,
-        "tissue_pixels": 99456
+        "background_pixels": 51311,
+        "tissue_pixels": 105797
       },
       "6layer": {
         "unique_labels": [
@@ -782,8 +782,8 @@
           5,
           6
         ],
-        "background_pixels": 58006,
-        "tissue_pixels": 99102
+        "background_pixels": 51311,
+        "tissue_pixels": 105797
       },
       "9layer": {
         "unique_labels": [
@@ -798,8 +798,8 @@
           8,
           9
         ],
-        "background_pixels": 58997,
-        "tissue_pixels": 98111
+        "background_pixels": 51311,
+        "tissue_pixels": 105797
       }
     },
     {
@@ -816,8 +816,8 @@
           2,
           3
         ],
-        "background_pixels": 58946,
-        "tissue_pixels": 98162
+        "background_pixels": 52731,
+        "tissue_pixels": 104377
       },
       "6layer": {
         "unique_labels": [
@@ -829,8 +829,8 @@
           5,
           6
         ],
-        "background_pixels": 59017,
-        "tissue_pixels": 98091
+        "background_pixels": 52731,
+        "tissue_pixels": 104377
       },
       "9layer": {
         "unique_labels": [
@@ -845,8 +845,8 @@
           8,
           9
         ],
-        "background_pixels": 60160,
-        "tissue_pixels": 96948
+        "background_pixels": 52731,
+        "tissue_pixels": 104377
       }
     },
     {
@@ -863,8 +863,8 @@
           2,
           3
         ],
-        "background_pixels": 53724,
-        "tissue_pixels": 103384
+        "background_pixels": 48342,
+        "tissue_pixels": 108766
       },
       "6layer": {
         "unique_labels": [
@@ -876,8 +876,8 @@
           5,
           6
         ],
-        "background_pixels": 54226,
-        "tissue_pixels": 102882
+        "background_pixels": 48342,
+        "tissue_pixels": 108766
       },
       "9layer": {
         "unique_labels": [
@@ -892,8 +892,8 @@
           8,
           9
         ],
-        "background_pixels": 54879,
-        "tissue_pixels": 102229
+        "background_pixels": 48342,
+        "tissue_pixels": 108766
       }
     },
     {
@@ -910,8 +910,8 @@
           2,
           3
         ],
-        "background_pixels": 48677,
-        "tissue_pixels": 108431
+        "background_pixels": 44286,
+        "tissue_pixels": 112822
       },
       "6layer": {
         "unique_labels": [
@@ -923,8 +923,8 @@
           5,
           6
         ],
-        "background_pixels": 48878,
-        "tissue_pixels": 108230
+        "background_pixels": 44286,
+        "tissue_pixels": 112822
       },
       "9layer": {
         "unique_labels": [
@@ -939,8 +939,8 @@
           8,
           9
         ],
-        "background_pixels": 50073,
-        "tissue_pixels": 107035
+        "background_pixels": 44286,
+        "tissue_pixels": 112822
       }
     }
   ]
