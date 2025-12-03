@@ -101,4 +101,3 @@ plt.tight_layout()
 plt.savefig('eit_cem_skfem_demo.png', dpi=150, bbox_inches='tight')
 print("Saved: eit_cem_skfem_demo.png")
 plt.close()
-    
