@@ -1,0 +1,2150 @@
+{
+  "n_subjects": 20,
+  "pixel_size_mm": 2.0,
+  "subsample_forward": 2,
+  "subsample_inverse": 5,
+  "input_directory": "/mnt/d/Programming/EIT/brainweb_subjects",
+  "output_directory": "/mnt/d/Programming/EIT/brainweb_meshes",
+  "subjects": [
+    {
+      "subject_name": "subject_00",
+      "layers": {
+        "3layer": {
+          "forward": {
+            "n_nodes": 27690,
+            "n_triangles": 54626,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/3layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/3layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/3layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/3layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/3layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4434,
+            "n_triangles": 8568,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/3layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/3layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/3layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/3layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/3layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3
+          ]
+        },
+        "6layer": {
+          "forward": {
+            "n_nodes": 27690,
+            "n_triangles": 54626,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/6layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/6layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/6layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/6layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/6layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4434,
+            "n_triangles": 8568,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/6layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/6layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/6layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/6layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/6layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "9layer": {
+          "forward": {
+            "n_nodes": 27690,
+            "n_triangles": 54626,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/9layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/9layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/9layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/9layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/9layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4434,
+            "n_triangles": 8568,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/9layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/9layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/9layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/9layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_00/9layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_01",
+      "layers": {
+        "3layer": {
+          "forward": {
+            "n_nodes": 26002,
+            "n_triangles": 51276,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/3layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/3layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/3layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/3layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/3layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4154,
+            "n_triangles": 8018,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/3layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/3layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/3layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/3layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/3layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3
+          ]
+        },
+        "6layer": {
+          "forward": {
+            "n_nodes": 26002,
+            "n_triangles": 51276,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/6layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/6layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/6layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/6layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/6layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4154,
+            "n_triangles": 8018,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/6layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/6layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/6layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/6layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/6layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "9layer": {
+          "forward": {
+            "n_nodes": 26002,
+            "n_triangles": 51276,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/9layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/9layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/9layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/9layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/9layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4154,
+            "n_triangles": 8018,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/9layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/9layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/9layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/9layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_01/9layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_02",
+      "layers": {
+        "3layer": {
+          "forward": {
+            "n_nodes": 29390,
+            "n_triangles": 58010,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/3layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/3layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/3layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/3layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/3layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4695,
+            "n_triangles": 9084,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/3layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/3layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/3layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/3layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/3layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3
+          ]
+        },
+        "6layer": {
+          "forward": {
+            "n_nodes": 29390,
+            "n_triangles": 58010,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/6layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/6layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/6layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/6layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/6layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4695,
+            "n_triangles": 9084,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/6layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/6layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/6layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/6layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/6layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "9layer": {
+          "forward": {
+            "n_nodes": 29390,
+            "n_triangles": 58010,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/9layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/9layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/9layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/9layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/9layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4695,
+            "n_triangles": 9084,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/9layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/9layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/9layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/9layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_02/9layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_03",
+      "layers": {
+        "3layer": {
+          "forward": {
+            "n_nodes": 27957,
+            "n_triangles": 55106,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/3layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/3layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/3layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/3layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/3layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4476,
+            "n_triangles": 8630,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/3layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/3layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/3layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/3layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/3layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3
+          ]
+        },
+        "6layer": {
+          "forward": {
+            "n_nodes": 27957,
+            "n_triangles": 55106,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/6layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/6layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/6layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/6layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/6layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4476,
+            "n_triangles": 8630,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/6layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/6layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/6layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/6layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/6layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "9layer": {
+          "forward": {
+            "n_nodes": 27957,
+            "n_triangles": 55106,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/9layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/9layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/9layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/9layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/9layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4476,
+            "n_triangles": 8630,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/9layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/9layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/9layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/9layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_03/9layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_04",
+      "layers": {
+        "3layer": {
+          "forward": {
+            "n_nodes": 26079,
+            "n_triangles": 51428,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/3layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/3layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/3layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/3layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/3layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4172,
+            "n_triangles": 8054,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/3layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/3layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/3layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/3layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/3layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3
+          ]
+        },
+        "6layer": {
+          "forward": {
+            "n_nodes": 26079,
+            "n_triangles": 51428,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/6layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/6layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/6layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/6layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/6layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4172,
+            "n_triangles": 8054,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/6layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/6layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/6layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/6layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/6layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "9layer": {
+          "forward": {
+            "n_nodes": 26079,
+            "n_triangles": 51428,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/9layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/9layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/9layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/9layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/9layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4172,
+            "n_triangles": 8054,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/9layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/9layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/9layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/9layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_04/9layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_05",
+      "layers": {
+        "3layer": {
+          "forward": {
+            "n_nodes": 27665,
+            "n_triangles": 54572,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/3layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/3layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/3layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/3layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/3layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4430,
+            "n_triangles": 8556,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/3layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/3layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/3layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/3layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/3layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3
+          ]
+        },
+        "6layer": {
+          "forward": {
+            "n_nodes": 27665,
+            "n_triangles": 54572,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/6layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/6layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/6layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/6layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/6layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4430,
+            "n_triangles": 8556,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/6layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/6layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/6layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/6layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/6layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "9layer": {
+          "forward": {
+            "n_nodes": 27665,
+            "n_triangles": 54572,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/9layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/9layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/9layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/9layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/9layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4430,
+            "n_triangles": 8556,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/9layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/9layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/9layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/9layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_05/9layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_06",
+      "layers": {
+        "3layer": {
+          "forward": {
+            "n_nodes": 27246,
+            "n_triangles": 53688,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/3layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/3layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/3layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/3layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/3layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4357,
+            "n_triangles": 8398,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/3layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/3layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/3layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/3layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/3layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3
+          ]
+        },
+        "6layer": {
+          "forward": {
+            "n_nodes": 27045,
+            "n_triangles": 53346,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/6layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/6layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/6layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/6layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/6layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4326,
+            "n_triangles": 8358,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/6layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/6layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/6layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/6layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/6layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "9layer": {
+          "forward": {
+            "n_nodes": 27246,
+            "n_triangles": 53688,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/9layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/9layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/9layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/9layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/9layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4357,
+            "n_triangles": 8398,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/9layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/9layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/9layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/9layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_06/9layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_07",
+      "layers": {
+        "3layer": {
+          "forward": {
+            "n_nodes": 26886,
+            "n_triangles": 53024,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/3layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/3layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/3layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/3layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/3layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4299,
+            "n_triangles": 8298,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/3layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/3layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/3layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/3layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/3layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3
+          ]
+        },
+        "6layer": {
+          "forward": {
+            "n_nodes": 26886,
+            "n_triangles": 53024,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/6layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/6layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/6layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/6layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/6layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4299,
+            "n_triangles": 8298,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/6layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/6layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/6layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/6layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/6layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "9layer": {
+          "forward": {
+            "n_nodes": 26886,
+            "n_triangles": 53024,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/9layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/9layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/9layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/9layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/9layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4299,
+            "n_triangles": 8298,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/9layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/9layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/9layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/9layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_07/9layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_08",
+      "layers": {
+        "3layer": {
+          "forward": {
+            "n_nodes": 27090,
+            "n_triangles": 53436,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/3layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/3layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/3layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/3layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/3layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4335,
+            "n_triangles": 8378,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/3layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/3layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/3layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/3layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/3layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3
+          ]
+        },
+        "6layer": {
+          "forward": {
+            "n_nodes": 27090,
+            "n_triangles": 53436,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/6layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/6layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/6layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/6layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/6layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4335,
+            "n_triangles": 8378,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/6layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/6layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/6layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/6layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/6layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "9layer": {
+          "forward": {
+            "n_nodes": 27090,
+            "n_triangles": 53436,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/9layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/9layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/9layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/9layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/9layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4335,
+            "n_triangles": 8378,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/9layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/9layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/9layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/9layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_08/9layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_09",
+      "layers": {
+        "3layer": {
+          "forward": {
+            "n_nodes": 27182,
+            "n_triangles": 53608,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/3layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/3layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/3layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/3layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/3layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4349,
+            "n_triangles": 8404,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/3layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/3layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/3layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/3layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/3layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3
+          ]
+        },
+        "6layer": {
+          "forward": {
+            "n_nodes": 27182,
+            "n_triangles": 53608,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/6layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/6layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/6layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/6layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/6layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4349,
+            "n_triangles": 8404,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/6layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/6layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/6layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/6layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/6layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "9layer": {
+          "forward": {
+            "n_nodes": 27182,
+            "n_triangles": 53608,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/9layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/9layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/9layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/9layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/9layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4349,
+            "n_triangles": 8404,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/9layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/9layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/9layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/9layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_09/9layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_10",
+      "layers": {
+        "3layer": {
+          "forward": {
+            "n_nodes": 26897,
+            "n_triangles": 53056,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/3layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/3layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/3layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/3layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/3layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4304,
+            "n_triangles": 8314,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/3layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/3layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/3layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/3layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/3layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3
+          ]
+        },
+        "6layer": {
+          "forward": {
+            "n_nodes": 26897,
+            "n_triangles": 53056,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/6layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/6layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/6layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/6layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/6layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4304,
+            "n_triangles": 8314,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/6layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/6layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/6layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/6layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/6layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "9layer": {
+          "forward": {
+            "n_nodes": 26897,
+            "n_triangles": 53056,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/9layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/9layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/9layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/9layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/9layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4304,
+            "n_triangles": 8314,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/9layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/9layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/9layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/9layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_10/9layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_11",
+      "layers": {
+        "3layer": {
+          "forward": {
+            "n_nodes": 28055,
+            "n_triangles": 55352,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/3layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/3layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/3layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/3layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/3layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4487,
+            "n_triangles": 8674,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/3layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/3layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/3layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/3layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/3layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3
+          ]
+        },
+        "6layer": {
+          "forward": {
+            "n_nodes": 28055,
+            "n_triangles": 55352,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/6layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/6layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/6layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/6layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/6layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4487,
+            "n_triangles": 8674,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/6layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/6layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/6layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/6layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/6layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "9layer": {
+          "forward": {
+            "n_nodes": 28055,
+            "n_triangles": 55352,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/9layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/9layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/9layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/9layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/9layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4487,
+            "n_triangles": 8674,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/9layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/9layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/9layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/9layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_11/9layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_12",
+      "layers": {
+        "3layer": {
+          "forward": {
+            "n_nodes": 27956,
+            "n_triangles": 55150,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/3layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/3layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/3layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/3layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/3layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4475,
+            "n_triangles": 8648,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/3layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/3layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/3layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/3layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/3layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3
+          ]
+        },
+        "6layer": {
+          "forward": {
+            "n_nodes": 27956,
+            "n_triangles": 55150,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/6layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/6layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/6layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/6layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/6layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4475,
+            "n_triangles": 8648,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/6layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/6layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/6layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/6layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/6layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "9layer": {
+          "forward": {
+            "n_nodes": 27956,
+            "n_triangles": 55150,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/9layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/9layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/9layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/9layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/9layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4475,
+            "n_triangles": 8648,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/9layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/9layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/9layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/9layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_12/9layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_13",
+      "layers": {
+        "3layer": {
+          "forward": {
+            "n_nodes": 28198,
+            "n_triangles": 55624,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/3layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/3layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/3layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/3layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/3layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4501,
+            "n_triangles": 8696,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/3layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/3layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/3layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/3layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/3layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3
+          ]
+        },
+        "6layer": {
+          "forward": {
+            "n_nodes": 28198,
+            "n_triangles": 55624,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/6layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/6layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/6layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/6layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/6layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4501,
+            "n_triangles": 8696,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/6layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/6layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/6layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/6layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/6layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "9layer": {
+          "forward": {
+            "n_nodes": 28198,
+            "n_triangles": 55624,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/9layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/9layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/9layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/9layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/9layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4501,
+            "n_triangles": 8696,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/9layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/9layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/9layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/9layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_13/9layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_14",
+      "layers": {
+        "3layer": {
+          "forward": {
+            "n_nodes": 27940,
+            "n_triangles": 55124,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/3layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/3layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/3layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/3layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/3layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4470,
+            "n_triangles": 8642,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/3layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/3layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/3layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/3layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/3layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3
+          ]
+        },
+        "6layer": {
+          "forward": {
+            "n_nodes": 27940,
+            "n_triangles": 55124,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/6layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/6layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/6layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/6layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/6layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4470,
+            "n_triangles": 8642,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/6layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/6layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/6layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/6layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/6layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "9layer": {
+          "forward": {
+            "n_nodes": 27940,
+            "n_triangles": 55124,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/9layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/9layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/9layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/9layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/9layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4470,
+            "n_triangles": 8642,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/9layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/9layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/9layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/9layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_14/9layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_15",
+      "layers": {
+        "3layer": {
+          "forward": {
+            "n_nodes": 27256,
+            "n_triangles": 53768,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/3layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/3layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/3layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/3layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/3layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4356,
+            "n_triangles": 8414,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/3layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/3layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/3layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/3layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/3layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3
+          ]
+        },
+        "6layer": {
+          "forward": {
+            "n_nodes": 27256,
+            "n_triangles": 53768,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/6layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/6layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/6layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/6layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/6layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4356,
+            "n_triangles": 8414,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/6layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/6layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/6layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/6layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/6layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "9layer": {
+          "forward": {
+            "n_nodes": 27256,
+            "n_triangles": 53768,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/9layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/9layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/9layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/9layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/9layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4356,
+            "n_triangles": 8414,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/9layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/9layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/9layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/9layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_15/9layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_16",
+      "layers": {
+        "3layer": {
+          "forward": {
+            "n_nodes": 26446,
+            "n_triangles": 52156,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/3layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/3layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/3layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/3layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/3layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4235,
+            "n_triangles": 8176,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/3layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/3layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/3layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/3layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/3layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3
+          ]
+        },
+        "6layer": {
+          "forward": {
+            "n_nodes": 26446,
+            "n_triangles": 52156,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/6layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/6layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/6layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/6layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/6layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4235,
+            "n_triangles": 8176,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/6layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/6layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/6layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/6layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/6layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "9layer": {
+          "forward": {
+            "n_nodes": 26446,
+            "n_triangles": 52156,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/9layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/9layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/9layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/9layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/9layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4235,
+            "n_triangles": 8176,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/9layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/9layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/9layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/9layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_16/9layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_17",
+      "layers": {
+        "3layer": {
+          "forward": {
+            "n_nodes": 26091,
+            "n_triangles": 51454,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/3layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/3layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/3layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/3layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/3layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4176,
+            "n_triangles": 8062,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/3layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/3layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/3layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/3layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/3layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3
+          ]
+        },
+        "6layer": {
+          "forward": {
+            "n_nodes": 26091,
+            "n_triangles": 51454,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/6layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/6layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/6layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/6layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/6layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4176,
+            "n_triangles": 8062,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/6layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/6layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/6layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/6layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/6layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "9layer": {
+          "forward": {
+            "n_nodes": 26091,
+            "n_triangles": 51454,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/9layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/9layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/9layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/9layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/9layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4176,
+            "n_triangles": 8062,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/9layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/9layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/9layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/9layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_17/9layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_18",
+      "layers": {
+        "3layer": {
+          "forward": {
+            "n_nodes": 27200,
+            "n_triangles": 53656,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/3layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/3layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/3layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/3layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/3layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4353,
+            "n_triangles": 8412,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/3layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/3layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/3layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/3layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/3layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3
+          ]
+        },
+        "6layer": {
+          "forward": {
+            "n_nodes": 27200,
+            "n_triangles": 53656,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/6layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/6layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/6layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/6layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/6layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4353,
+            "n_triangles": 8412,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/6layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/6layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/6layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/6layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/6layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "9layer": {
+          "forward": {
+            "n_nodes": 27200,
+            "n_triangles": 53656,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/9layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/9layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/9layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/9layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/9layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4353,
+            "n_triangles": 8412,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/9layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/9layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/9layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/9layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_18/9layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "subject_name": "subject_19",
+      "layers": {
+        "3layer": {
+          "forward": {
+            "n_nodes": 28202,
+            "n_triangles": 55646,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/3layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/3layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/3layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/3layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/3layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4514,
+            "n_triangles": 8722,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/3layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/3layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/3layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/3layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/3layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3
+          ]
+        },
+        "6layer": {
+          "forward": {
+            "n_nodes": 28202,
+            "n_triangles": 55646,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/6layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/6layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/6layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/6layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/6layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4514,
+            "n_triangles": 8722,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/6layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/6layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/6layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/6layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/6layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "9layer": {
+          "forward": {
+            "n_nodes": 28202,
+            "n_triangles": 55646,
+            "subsample": 2,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/9layer/forward/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/9layer/forward/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/9layer/forward/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/9layer/forward/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/9layer/forward/mesh_viz.png"
+            ]
+          },
+          "inverse": {
+            "n_nodes": 4514,
+            "n_triangles": 8722,
+            "subsample": 5,
+            "files": [
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/9layer/inverse/head_mesh.vtk",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/9layer/inverse/head_mesh.msh",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/9layer/inverse/head_mesh.xdmf",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/9layer/inverse/head_mesh.npz",
+              "/mnt/d/Programming/EIT/brainweb_meshes/subject_19/9layer/inverse/mesh_viz.png"
+            ]
+          },
+          "materials": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    }
+  ]
+}
