@@ -5,7 +5,7 @@ Generates a small batch of samples for one subject and creates
 diagnostic visualisations.  Run this BEFORE generating the full dataset.
 
 Usage:
-    python sanity_check.py --mesh-dir /path/to/brainweb_meshes --subject subject_00
+    python sanity_check.py --subject subject_00
 """
 
 import numpy as np
@@ -15,7 +15,12 @@ from pathlib import Path
 import sys
 import time
 
-sys.path.insert(0, "/mnt/d/Programming/EIT/forward")
+# --- Project-relative imports via eit_config ---
+_dir = Path(__file__).resolve().parent
+while not (_dir / "eit_config.py").exists():
+    _dir = _dir.parent
+sys.path.insert(0, str(_dir))
+from eit_config import *
 
 from monitoring_data_generator import (
     load_mesh,
@@ -26,12 +31,15 @@ from eit_forward_skfem import load_brainweb_mesh
 
 
 def sanity_check(
-    mesh_dir: str = "/mnt/d/Programming/EIT/brainweb_meshes",
+    mesh_dir: str = None,
     subject: str = "subject_00",
     layer_type: str = "6layer",
     n_samples: int = 8,
     output_dir: str = "./sanity_check_output",
 ):
+    if mesh_dir is None:
+        mesh_dir = str(BRAINWEB_MESHES_DIR)
+
     out = Path(output_dir)
     out.mkdir(parents=True, exist_ok=True)
 
@@ -146,7 +154,7 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--mesh-dir", default="/mnt/d/Programming/EIT/brainweb_meshes")
+    parser.add_argument("--mesh-dir", default=str(BRAINWEB_MESHES_DIR))
     parser.add_argument("--subject", default="subject_00")
     parser.add_argument("--layer", default="6layer")
     parser.add_argument("--n-samples", type=int, default=8)

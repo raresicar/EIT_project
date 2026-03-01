@@ -5,6 +5,16 @@ Demonstrates forward solve with BrainWeb mesh.
 Prints detailed diagnostics including voltage statistics.
 """
 
+from pathlib import Path
+import sys
+
+# --- Project-relative imports via eit_config ---
+_dir = Path(__file__).resolve().parent
+while not (_dir / "eit_config.py").exists():
+    _dir = _dir.parent
+sys.path.insert(0, str(_dir))
+from eit_config import *
+
 from eit_forward_skfem import (
     EIT, current_method, load_brainweb_mesh, 
     materials_to_conductivity, plot_conductivity
@@ -16,7 +26,7 @@ import time
 
 
 def forward_solve_example(
-    mesh_path='/mnt/d/Programming/EIT/brainweb_meshes/subject_00/6layer/forward/head_mesh.npz',
+    mesh_path=None,
     layer_type='6layer',
     n_electrodes=16,
     injection_method=2,
@@ -25,15 +35,10 @@ def forward_solve_example(
 ):
     """
     Run forward solve example with diagnostics.
-    
-    Args:
-        mesh_path: Path to mesh NPZ file
-        layer_type: '3layer' or '6layer'
-        n_electrodes: Number of electrodes
-        injection_method: Current injection pattern (1-5)
-        contact_impedance: Contact impedance (Ohm·m²)
-        visualize: Create visualization
     """
+    if mesh_path is None:
+        mesh_path = str(BRAINWEB_MESHES_DIR / 'subject_00' / '6layer' / 'forward' / 'head_mesh.npz')
+
     print("="*70)
     print("EIT Forward Solver Example")
     print("="*70)
@@ -107,7 +112,7 @@ def forward_solve_example(
     print(f"  Mean per pattern range: [{mean_per_pattern.min():.6e}, {mean_per_pattern.max():.6e}]")
     print(f"  Max |mean|: {np.abs(mean_per_pattern).max():.6e}  (grounding check)")
     
-    # Check grounding (mean should be ~machine precision)
+    # Check grounding
     max_mean = np.abs(mean_per_pattern).max()
     if max_mean < 1e-10:
         print(f"  ✓ Grounding constraint satisfied ({max_mean:.2e} < 1e-10)")
@@ -144,31 +149,25 @@ def forward_solve_example(
         
         tri = Triangulation(mesh.p[0], mesh.p[1], mesh.t.T)
         
-        # 1. Mesh with electrodes
         ax = axes[0, 0]
         ax.triplot(tri, 'k-', linewidth=0.2, alpha=0.3)
-        
         colors = plt.cm.tab20(np.linspace(0, 1, L))
         for i, facets in enumerate(electrode_markers):
             for facet_idx in facets:
                 nodes = mesh.facets[:, facet_idx]
                 coords = mesh.p[:, nodes]
                 ax.plot(coords[0], coords[1], '-', color=colors[i], linewidth=3)
-            
-            # Label
             mid_facet = facets[len(facets)//2]
             mid_nodes = mesh.facets[:, mid_facet]
             mid = mesh.p[:, mid_nodes].mean(axis=1)
             ax.text(mid[0]*1.1, mid[1]*1.1, str(i+1), 
                    ha='center', va='center', fontsize=8, fontweight='bold')
-        
         ax.set_aspect('equal')
         ax.set_title(f'Mesh with {L} Electrodes\n'
                     f'{mesh.p.shape[1]:,} nodes, {mesh.t.shape[1]:,} elements',
                     fontweight='bold')
         ax.axis('off')
         
-        # 2. Potential field (first pattern)
         ax = axes[0, 1]
         im = ax.tripcolor(tri, u_all[0], cmap='RdBu_r', shading='gouraud')
         plt.colorbar(im, ax=ax, label='Potential (V)')
@@ -178,7 +177,6 @@ def forward_solve_example(
                     fontweight='bold')
         ax.axis('off')
         
-        # 3. Electrode voltages (all patterns)
         ax = axes[1, 0]
         im = ax.imshow(U, aspect='auto', cmap='RdBu_r', interpolation='nearest')
         plt.colorbar(im, ax=ax, label='Voltage (V)')
@@ -188,7 +186,6 @@ def forward_solve_example(
                     f'Range: [{U.min():.3e}, {U.max():.3e}], Mean: {U.mean():.3e}',
                     fontweight='bold')
         
-        # 4. Jacobian sensitivity
         ax = axes[1, 1]
         sens = np.abs(J).mean(axis=0)
         im = ax.tripcolor(tri, sens, cmap='hot', shading='flat')
@@ -200,7 +197,6 @@ def forward_solve_example(
         ax.axis('off')
         
         plt.tight_layout()
-        
         output_path = 'forward_solve_example.png'
         plt.savefig(output_path, dpi=200, bbox_inches='tight')
         print(f"✓ Saved: {output_path}")
@@ -216,17 +212,14 @@ def forward_solve_example(
 if __name__ == "__main__":
     import argparse
     
+    default_mesh = str(BRAINWEB_MESHES_DIR / 'subject_00' / '6layer' / 'forward' / 'head_mesh.npz')
+    
     parser = argparse.ArgumentParser(description="EIT forward solver example")
-    parser.add_argument('--mesh', default='/mnt/d/Programming/EIT/brainweb_meshes/subject_00/6layer/forward/head_mesh.npz',
-                       help='Path to mesh NPZ file')
-    parser.add_argument('--layer-type', default='6layer', choices=['3layer', '6layer'],
-                       help='Layer type')
-    parser.add_argument('--electrodes', type=int, default=16,
-                       help='Number of electrodes')
-    parser.add_argument('--injection', type=int, default=2, choices=[1, 2, 3, 4, 5],
-                       help='Injection pattern method')
-    parser.add_argument('--no-viz', action='store_true',
-                       help='Skip visualization')
+    parser.add_argument('--mesh', default=default_mesh, help='Path to mesh NPZ file')
+    parser.add_argument('--layer-type', default='6layer', choices=['3layer', '6layer'])
+    parser.add_argument('--electrodes', type=int, default=16)
+    parser.add_argument('--injection', type=int, default=2, choices=[1, 2, 3, 4, 5])
+    parser.add_argument('--no-viz', action='store_true')
     
     args = parser.parse_args()
     

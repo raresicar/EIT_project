@@ -58,13 +58,14 @@ import json
 import time
 import sys
 
-from skfem import MeshTri
+# --- Project-relative imports via eit_config ---
+_dir = Path(__file__).resolve().parent
+while not (_dir / "eit_config.py").exists():
+    _dir = _dir.parent
+sys.path.insert(0, str(_dir))
+from eit_config import *
 
-# ---------------------------------------------------------------------------
-# These imports assume the files live next to this script or on PYTHONPATH.
-# Adjust the import style to match your project layout.
-# ---------------------------------------------------------------------------
-sys.path.insert(0, "/mnt/d/Programming/EIT/forward")
+from skfem import MeshTri
 from eit_forward_skfem import (
     EIT,
     current_method,
@@ -103,12 +104,12 @@ def assign_conductivity_6layer(materials: np.ndarray) -> np.ndarray:
     """
     Assign conductivity (S/m) for 6-layer model with biological variability.
 
-    Material IDs  (from load_brainweb_subjects.py / fi_stroke_generator.py):
-        0  Background
-        1  Scalp          5  White matter
-        2  Skull           6  Ventricles (≈ CSF)
-        3  CSF            10  Ischemic stroke
-        4  Grey matter    11  Hemorrhagic stroke
+    Material IDs:
+        0  Background       5  White matter
+        1  Scalp             6  Ventricles (≈ CSF)
+        2  Skull            10  Ischemic stroke
+        3  CSF              11  Hemorrhagic stroke
+        4  Grey matter
     """
     s = SCALP_CONDUCTIVITY
     lut = {
@@ -216,7 +217,6 @@ def paint_stroke(
 ) -> np.ndarray:
     """
     Set elements within *radius* of *centre* (and inside brain) to stroke ID.
-
     Returns a COPY of materials with stroke painted in.
     """
     mat = materials.copy()
@@ -283,10 +283,7 @@ def project_conductivity(
 ) -> np.ndarray:
     """
     Project per-element conductivity from fine mesh to coarse mesh.
-
-    Strategy: for each coarse element, find the nearest fine-mesh centroid
-    and copy its value.  (Both meshes are pixel-based triangulations from the
-    same image, so nearest-centroid is a reasonable and cheap approach.)
+    Strategy: nearest-centroid lookup.
     """
     from scipy.spatial import cKDTree
 
@@ -302,7 +299,6 @@ def project_conductivity(
 def add_noise(delta_U: np.ndarray, noise_level: float) -> np.ndarray:
     """
     Add relative Gaussian noise.
-
     noise_level is a fraction (e.g. 0.003 = 0.3 %).
     Noise std = noise_level * max(|ΔU|).
     """
@@ -328,7 +324,6 @@ def generate_one_sample(
 ) -> dict:
     """
     Generate one monitoring sample.
-
     Returns a dict with all arrays ready to be saved to NPZ.
     """
     cond_fn = CONDUCTIVITY_FN[layer_type]
@@ -338,12 +333,7 @@ def generate_one_sample(
     centre, r1 = random_stroke_location(mesh_fwd, materials_fwd, brain_ids)
     r2 = r1 * scenario["r_factor"]
 
-    mat1 = paint_stroke(
-        materials_fwd, centroids_fwd, brain_mask_fwd,
-        centre, r1, scenario["stroke_type"],
-    )
-    
-    # --- Shared background conductivity (same tissue for both states) ---
+    # --- Shared background conductivity (identical for both states) ---
     sigma_background = cond_fn(materials_fwd)
 
     # --- State 1 (baseline with existing stroke) ---
@@ -433,7 +423,6 @@ def compute_and_save_jacobian(
         electrode_markers=electrode_markers_inv,
     )
 
-    # Baseline conductivity (healthy — no stroke)
     sigma_ref = materials_to_conductivity(materials_inv, layer_type)
 
     print("    Computing Jacobian on inverse mesh ...")
@@ -442,11 +431,7 @@ def compute_and_save_jacobian(
     J = solver_inv.calc_jacobian(sigma_ref, u_all)
     print(f"    ✓ Jacobian {J.shape} in {time.time() - t0:.1f}s")
 
-    np.savez_compressed(
-        output_path,
-        J=J,
-        sigma_ref=sigma_ref,
-    )
+    np.savez_compressed(output_path, J=J, sigma_ref=sigma_ref)
     print(f"    ✓ Saved {output_path}")
 
     return J, sigma_ref
@@ -468,9 +453,7 @@ def generate_subject_layer(
     electrode_coverage: float = 0.5,
     compute_jacobian: bool = True,
 ):
-    """
-    Generate all monitoring samples for one subject + layer type.
-    """
+    """Generate all monitoring samples for one subject + layer type."""
     mesh_base = Path(mesh_base_dir)
     out = Path(output_dir) / layer_type / subject
     out.mkdir(parents=True, exist_ok=True)
@@ -493,7 +476,7 @@ def generate_subject_layer(
     )
     print(f"    {mesh_inv.p.shape[1]} nodes, {mesh_inv.t.shape[1]} elements")
 
-    # ---- Precompute centroids & brain mask (forward mesh) ----
+    # ---- Precompute centroids & brain mask ----
     centroids_fwd = element_centroids(mesh_fwd)
     brain_mask_fwd = np.isin(materials_fwd, brain_ids)
     centroids_inv = element_centroids(mesh_inv)
@@ -539,7 +522,6 @@ def generate_subject_layer(
             layer_type=layer_type,
         )
 
-        # Save
         fname = out / f"sample_{idx:04d}.npz"
         np.savez_compressed(fname, **sample)
 
@@ -577,8 +559,8 @@ def generate_subject_layer(
 # ========================================================================== #
 
 def generate_all(
-    mesh_base_dir: str = "/mnt/d/Programming/EIT/brainweb_meshes",
-    output_dir: str = "/mnt/d/Programming/EIT/monitoring_data",
+    mesh_base_dir: str = None,
+    output_dir: str = None,
     subjects: Optional[List[str]] = None,
     layer_types: Optional[List[str]] = None,
     n_samples_per_subject: int = 250,
@@ -587,11 +569,12 @@ def generate_all(
     z: float = 0.01,
     seed: int = 42,
 ):
-    """
-    Generate the full monitoring dataset.
+    """Generate the full monitoring dataset."""
+    if mesh_base_dir is None:
+        mesh_base_dir = str(BRAINWEB_MESHES_DIR)
+    if output_dir is None:
+        output_dir = str(MONITORING_DATA_DIR)
 
-    With 20 subjects × 250 samples = 5 000 samples per layer type.
-    """
     np.random.seed(seed)
 
     mesh_base = Path(mesh_base_dir)
@@ -605,7 +588,7 @@ def generate_all(
         )
 
     if layer_types is None:
-        layer_types = ["6layer"]  # primary experimental setup
+        layer_types = ["6layer"]
 
     print("=" * 70)
     print("MONITORING DATA GENERATION")
@@ -660,7 +643,6 @@ def generate_all(
 
     # ---- Save global metadata ----
     meta_path = out_base / "metadata.json"
-    # Convert for JSON serialisation
     meta_json = {}
     for lt, subj_dict in all_metadata.items():
         meta_json[lt] = {}
@@ -696,36 +678,14 @@ def main():
     parser = argparse.ArgumentParser(
         description="Generate monitoring data for EIT stroke evolution"
     )
-    parser.add_argument(
-        "--mesh-dir",
-        default="/mnt/d/Programming/EIT/brainweb_meshes",
-    )
-    parser.add_argument(
-        "--output-dir",
-        default="/mnt/d/Programming/EIT/monitoring_data",
-    )
-    parser.add_argument(
-        "--subjects", nargs="*", default=None,
-        help="Specific subjects (default: all)",
-    )
-    parser.add_argument(
-        "--layers", nargs="*", default=["6layer"],
-        choices=["3layer", "6layer"],
-    )
-    parser.add_argument(
-        "--n-samples", type=int, default=250,
-        help="Samples per subject (default 250; 20 subjects × 250 = 5000)",
-    )
-    parser.add_argument(
-        "--electrodes", type=int, default=16,
-    )
-    parser.add_argument(
-        "--injection", type=int, default=2,
-        choices=[1, 2, 3, 4, 5],
-    )
-    parser.add_argument(
-        "--seed", type=int, default=42,
-    )
+    parser.add_argument("--mesh-dir", default=str(BRAINWEB_MESHES_DIR))
+    parser.add_argument("--output-dir", default=str(MONITORING_DATA_DIR))
+    parser.add_argument("--subjects", nargs="*", default=None)
+    parser.add_argument("--layers", nargs="*", default=["6layer"], choices=["3layer", "6layer"])
+    parser.add_argument("--n-samples", type=int, default=250)
+    parser.add_argument("--electrodes", type=int, default=16)
+    parser.add_argument("--injection", type=int, default=2, choices=[1, 2, 3, 4, 5])
+    parser.add_argument("--seed", type=int, default=42)
 
     args = parser.parse_args()
 
